@@ -1,0 +1,88 @@
+
+	nat ::= 0 | S nat
+
+	dna ::= a | c | t | g | dna dna
+
+	a   c   t    t
+	|   |   |    |
+	dna dna dna  dna
+	|    |  |    |
+	  dna   |    |
+	  |     |    |
+	    dna      |
+	     |       |
+	        dna
+
+	num ::= 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | num num
+	    <= 2^32 - 1
+
+	exp ::= * | + | - | /
+
+	ari ::= num exp num | ari exp ari | ari exp num | num exp ari
+
+	  C ::= [.] exp ari | num exp [.] | num exp num
+
+	  ((4     +   4) /   3  )   *   7
+      ((num exp num) exp num) exp num
+      [            ] exp num
+      [                     ] exp num
+
+
+      omega = lam x . xx lam x . xx
+
+      lam x . y 
+      f(x) = y
+
+      f : x |-> x x 
+
+      f f
+
+      f(f) = f f
+
+
+	ASSUME RippleAdder  RA+(a, b), RA-(a, b), 
+
+	Convention: a, b, c are nums
+
+		BIG STEP: ->*
+
+	e -> e'   e' -> e''
+	--------------------(bigStep)
+	e ->* e''
+
+
+		SMALL STEP: ->
+
+
+	   e -> e'                            
+	--------------(smallStep)          
+	C[e] -> C[e']
+
+
+	RA+(a, b) = c
+	--------------(numAdd)
+	a + b -> c
+
+	RA*(a, b) = c
+	--------------(numMul)
+	a * b -> c
+
+	0 != b    RA/(a, b) = c
+	------------------------(numDiv)
+	a / b -> c
+
+	RA-(a, b) = c
+	--------------(numSub)
+	a - b -> c
+
+
+
+	num.rand := uniform[ 0, 1, ..., largest integer on your computer ]
+	exp.rand := unfirom[ *, +, -, / ]
+	ari.rand := uniformly choose one of the expression types
+	            recurse on its .rands
+
+	(4+5)/(   (2-5)*3)
+     ||| |     ||| ||
+     ari exp   ari
+              |       |
