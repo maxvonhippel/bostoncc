@@ -1,0 +1,39 @@
+#lang ivy1.8
+include numbers
+include collections 
+
+module letsDoMath = {
+
+	# Sum_{i=0}^N i = i (i + 1) / 2
+
+	# Proof Sketch:
+	#    Base Case: N=0
+	#        Sum_{i=0}^0 i = 0 = 0 (0 + 1) / 2 = 0
+	#    Inductive Step:
+	#        Suppose that for all i <= j,
+	#        Sum_{i=0}^N i = i (i + 1) / 2.
+	#        Then Sum_{i=0}^{N+1} i = N (N + 1) / 2 + (N + 1)
+	#        = ( N (N + 1) + 2N + 2 ) / 2
+	#        = ( N^2 + N + 2N + 2 ) / 2
+	#        = ( N^2 + 3N + 2 ) / 2
+	#        = (N + 1)((N + 1) + 1) / 2
+	#    QED.
+
+	var steps : nat
+	var sum   : nat
+
+	after init {
+		steps := 0;
+		sum   := 0;
+	}
+
+	action step = {
+		steps := steps + 1;
+		sum := sum + steps;
+	}
+
+	invariant sum = (steps * (steps + 1) ) / 2
+}
+
+instance ldm : letsDoMath
+export ldm.step
