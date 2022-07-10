@@ -1,0 +1,126 @@
+On Definition 2.3 (F_del and G_sig):
+    
+    uncountable intersection example:
+
+        irrat = bigcap { { r }^c : r a rational } 
+            
+            are a countable intersection of open sets
+
+    Open question (for us):
+        is there any set that is neither G_del nor F_sig?
+
+2.2 Neighborhoods and closures
+
+    A^circ means "interior of A" means largest open set within A.
+
+--------X-----------|
+    _______         |
+    | .    | V
+    --------
+
+
+        - every set has a boundary but the boundary might be the empty set
+
+        impose standard topology over X = [-4, 10]
+
+        WRONG: boundary of X = { -4, 10 }
+
+        and X is clopen
+
+        Errattum: Your space X always has empty boundary as otherwise you'd
+        have a point that non-trivially intersects with stuff outside the space,
+        but by definition such stuff does not exist.
+
+        We KNOW all open sets DO NOT CONTAIN their boundary points.
+
+        Refer also to: https://www.amazon.com/Counterexamples-Topology-Dover-Books-Mathematics/dp/048668735X/ref=asc_df_048668735X/?tag=hyprod-20&linkCode=df0&hvadid=312165853622&hvpos=&hvnetw=g&hvrand=8743399671892861203&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9030244&hvtargid=pla-449277484053&psc=1&tag=&ref=&adgrpid=60258872297&hvpone=&hvptwo=&hvadid=312165853622&hvpos=&hvnetw=g&hvrand=8743399671892861203&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9030244&hvtargid=pla-449277484053
+
+        aka the counterexamples in topology book.
+
+
+REGARDING perfect subspaces:
+
+    Consider the real line.
+
+        { 4 } U [0, 1] is not perfect as shown by considering (3.5, 4.5)
+        
+
+    if 4 were a limit point in A
+        there would exist a sequence, in A, converging to 4, containing stuff other than 4
+        implying that there are elements of A arbitrarily close to 4
+        implying that every neighborhood of 4 in A contains a point of A other than 4
+            namely one of those arbitrarily close things from the sequence
+
+    { 4 - 1/n | n in Nat }
+        will contain 4 - 1/2 = 3.5
+        but there is no sequence WITHIN that sequence which conveges to 3.5
+        hence 3.5 is not an accumulation point
+        hence, the sequence is not perfect  
+
+
+
+        ( ( A  B ) C )
+
+        in this one, ( A B ) is perfect
+        because every neighborhood of A has B and vice versa
+
+
+        so in conclusion they don't need to be "big"
+
+BTW If you ever have someone ask for a good intro to pre-orders and such things,.
+chapter 1 of this text is very very nice (according to me, Max): https://www.logicmatters.net/resources/pdfs/Galois.pdf
+
+    a in A
+    b in B
+    (a, b) in A x B
+
+    Munkres writes a x b in A x B
+
+    a x b x c is in A x B x C
+
+    as opposed to ((a, b), c) or (a, (b, c))
+
+    (a, b) in A x B and c in C
+    (a, b) x c = (a, b, c)
+        looks kind of weird
+
+        compared to a x b x c
+
+        also kind of nice in power-set spaces which you do a lot of in topo.
+            so basically the notation handles the obvious isomorphism for you.
+
+{ (ra, rb) | ra, rb are rational }
+
+    (-pi, e)
+
+    Union (-1 * first N digits of pi | N in nat, similar for e)
+
+    Hence, we proved (ish) that R1 is 2nd countable.
+
+
+C(X) is the space of continuous functions X -> X
+
+    A function f : X -> Y on topological spaces (X, T_X) and (Y, T_Y)
+    is considered continuous if and only if, for all O_Y in T_Y,
+    f^-1 O_Y is in T_X.
+
+
+
+    ------
+    2.2.7
+
+    Consider the topology (R, T) where T is defined below.
+
+    T = {
+        A | x in A -> exists U open in R,
+                      exists C countable,
+                        such that U - C is a subset of A
+    }
+
+    A base for T is the set
+        B = { U - C where U is open in R and C is countable }
+
+    Only points in this space that converge are ones that are eventually constant.
+
+
+
