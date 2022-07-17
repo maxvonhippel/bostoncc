@@ -123,4 +123,26 @@ C(X) is the space of continuous functions X -> X
     Only points in this space that converge are ones that are eventually constant.
 
 
+0----- Continued on 17 July 22
+
+
+
+    Suppose { x_alpha } alpha_in_A is a net.
+    Let phi : Delta -> A be a function such that condition 2 holds.
+    Then { x_phi(d) } d_in_Delta is called a subnet of the original net on line 3.
+
+            phi
+    Delta ----------> A
+
+            n
+    A --------------> X
+
+
+        (1) Delta ----> A -----> X 
+                         <------
+
+            d |----------------> x
+                        a such that n(x) = x
+
+
 
