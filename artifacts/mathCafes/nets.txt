@@ -146,3 +146,11 @@ C(X) is the space of continuous functions X -> X
 
 
 
+
+        a < a' -> f(a) < f(a')
+
+        a in A then exists x in codomain(f) such that b > a -> 
+
+
+        { ()}
+
