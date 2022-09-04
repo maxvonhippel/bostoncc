@@ -196,5 +196,105 @@ PROOF.
 21st is next meeting
 
 
+September 4 2022
+
+---
+
+
+
+Proof of 2.32 Lemma in Hitchhiker's Guide:
+
+
+
+    K is a compact subset of a T2 space
+
+    Consider J = { (O, V) : k is in K and O is an 
+    open neighborhood of k and V is an open neighborhood of x
+    and O intersect V = emptyset }
+
+    Notice all these pairs must exist because the space is T2
+
+    Clearly the set of all the Os is an open covering of K
+
+    By compactness of K, there exists a finite subset of this set,
+    which is likewise an open covering of K
+
+    Take the finite subset of corresponding Vs, and take its 
+    (finite) intsersection; this must also be open as finite
+    intersection of open sets is open, and must include x because each
+    V contains x
+
+    Call this new set V_final
+
+    Call the union of the finite collection of Os we came up with, O_final
+
+    Clearly O_final intersect V_final = emptyset
+
+    and O_final contains K and V_final contains x
+
+    QED
+
+Claim: Compact subsets of T2 spaces are closed.
+
+    recall that arbitrary intersection of closed sets is closed.
+
+    Let K be a compact subset of a T2 space.
+
+    For each point x not in K, let (O_x, V_x) be a tuple such that O_x, V_x are both open sets, O_x contains K, and V_x contains x, and the intersection of O_x, V_x is the empty set.
+
+    Now take the intersection of all the V_x^c's for all the xs not in K.
+
+    This is an arbitrary intersection of closed sets that must contain all of K.
+
+    Indeed, this set cannot contain any x NOT in K, as to do so, it would need to contain an open neighborhood V_x, which cannot be the case
+    as it's part of the intersection with V_x^c.
+
+    So, this set doesn't contain anything not in K, and does contain K, therefore by excluded middle, the set is K.
+
+    QED.
+
+Ansatz: A homomorphism of groups can be thought of as a set isomorphism.
+
+    Let (G, +) and (H, *) be groups.
+    Let f : G -> H be a homomorphism of groups.
+
+    So, importantly, f(x + y) = f(x) * f(y).
+
+    Consider the set G_zipped = { (x, y, x + y) : x, y in G }
+                     H_zipped = { () }
+
+    Let h : G_zipped -> { (f(x), f(y), f(x + y)) | x, y in G } be the function
+
+        h(x, y, x + y) = (f(x), f(y), f(x + y))
+                       = (f(x), f(y), f(x) * f(y))
+                       = H_zipped
+
+    Because f is a homo. of groups, we were able to make
+    a function h which was obviously equivalent, where h
+    was a set isomorphism.
+
+    f(a) = x if and only if (x, 0, x) = h(a, 0, a).
+
+G = (N, +)
+H = ({ 0 }, +)
+
+f(x) = 0
+
+    Conclusion: Max's Ansatz is wrong.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
