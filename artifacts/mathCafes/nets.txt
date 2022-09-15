@@ -282,13 +282,57 @@ f(x) = 0
 
     Conclusion: Max's Ansatz is wrong.
 
+------------------------
 
 
 
 
+2.10 Semicontinuous Functions
+
+    Let f : X -> R be a function.
+
+
+    f is "lower semi-continuous" if for each r in R the pre-image of 
+        (-inf, r] is closed; and
+        
+         "upper semi-continuous" if for each r in R the pre-image of
+        [r, inf) is closed.
 
 
 
+        X = [1, 3] in R
+
+        f (x) = x + 2
+
+        f(X) = [3, 5] which is not all of R
+
+        minimizer of f is f^-1(3) = 1
+
+        [-inf, inf] -> [-inf, inf]
+
+        minimizer = { -inf }
+
+
+        {0, 1, 2}
+        { x >= 3}
+
+        f(x) = 0 if x <= 2 else 1
+
+
+      ( ( { . . . . . } )
+
+
+        { (.) ) . (.) . . . . . }
+
+        R = (-inf, inf)
+
+        [0, 1] = [-inf, inf]
+
+
+        Suppose for a contradiction x is a minimizer
+        Recall f : X -> R is our funciton, x in X
+
+        By supposition, f(x) is the smallest 
 
 
 
