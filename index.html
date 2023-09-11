@@ -1,1057 +1,1205 @@
 <!doctype html>
 <html lang=en>
-	<head>
-		<meta charset=utf-8>
-		<title>Boston Computation Club</title>
-	</head>
-	<link rel="stylesheet" href="https://unpkg.com/purecss@2.0.3/build/pure-min.css" integrity="sha384-cg6SkqEOCV1NbJoCu11+bm0NvBRc8IYLRGXkmNrqUBfTjmMYwNKPWBTIKyw9mHNJ" crossorigin="anonymous">
-	<link rel="stylesheet" type="text/css" href="index.css" media="screen"/>
-	<body>
-		<p>
-			<center>
-				<h1>Boston Computation Club</h1>
-			</center>
 
-			<br>
+<head>
+    <meta charset=utf-8>
+    <title>Boston Computation Club</title>
+</head>
+<link rel="stylesheet" href="https://unpkg.com/purecss@2.0.3/build/pure-min.css"
+    integrity="sha384-cg6SkqEOCV1NbJoCu11+bm0NvBRc8IYLRGXkmNrqUBfTjmMYwNKPWBTIKyw9mHNJ" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="index.css" media="screen" />
 
-			<div style="margin: 10px 40px 40px 40px; font-size: 1.5em">
-			The Boston Computation Club is a <i>small</i> seminar group focused on mathematical computer science, and computational mathematics.  Its name is plagiarized from the <a href="https://london.computation.club/">London Computation Club</a>.  Boston Computation Club meetings occur roughly every other week, on weekends, around 5pm EDT (modulo speaker availability).  The usual format is a 20m presentation followed by 40m of discussion.  Presenters can assume the audience is mathematically savvy, but cannot assume any definitions are known to begin with.
-			The Club has no strict leadership but is gently guided by
-			<a href="https://twitter.com/maxvonhippel">Max von Hippel</a>,
-			<a href="https://github.com/Denbox">Jacob Denbeaux</a>,
-			& friends.
+<body>
+    <p>
+        <center>
+            <h1>Boston Computation Club</h1>
+        </center>
 
-			<br>
-			<h5>To join the Slack & attend future talks, or <span style="color:blue">if you would like to give a talk</span>, email vonhippel [ dot ] m [ at ] northeastern [ dot ] edu, or tweet <a href="https://twitter.com/maxvonhippel">@maxvonhippel</a>.  You can find us on <a href="https://www.youtube.com/channel/UCdQKL8IGTVagOPWE_cjj0TA">YouTube</a>, <a href="https://anchor.fm/bostoncc">Anchor</a>, and <a href="https://bstn.substack.com/">Substack</a>.</h5>
+        <br>
 
-			<h3>Next Meeting: September 17, 2023 at 5PM EST</h3>
-			<table>
-				<tr>
-					<td>
-						<img src="emojis/dice.svg" class="icon"/>
-					<td>
-						<u>Open Problems in Probabilistic Programming Semantics</u>, <a href="https://esennesh.github.io/">Eli Sennesh</a>
-					</td>
-				</tr>
-			</table>
+    <div style="margin: 10px 40px 40px 40px; font-size: 1.5em">
+        The Boston Computation Club is a <i>small</i> seminar group focused on mathematical computer science, and
+        computational mathematics. Its name is plagiarized from the <a href="https://london.computation.club/">London
+            Computation Club</a>. Boston Computation Club meetings occur roughly every other week, on weekends, around
+        5pm EDT (modulo speaker availability). The usual format is a 20m presentation followed by 40m of discussion.
+        Presenters can assume the audience is mathematically savvy, but cannot assume any definitions are known to begin
+        with.
+        The Club has no strict leadership but is gently guided by
+        <a href="https://twitter.com/maxvonhippel">Max von Hippel</a>,
+        <a href="https://github.com/Denbox">Jacob Denbeaux</a>,
+        & friends.
 
-			<h3>Prior Meetings</h3>
-			<table>
-				<tr>
-					<td>
-						<img src="emojis/noteboard.svg" class="icon"/>
-					<td>
-						09/09/23: <a href="https://philarchive.org/rec/DALTAF-2">Transferable and Fixable Proofs</a>, <a href="https://philarchive.org/rec/DALTAF-2">Bill Dalessandro</a>
-						[<a href="https://youtu.be/Ocs6w8L37cI">VIDEO</a>]
-						[<a href="https://castro.fm/episode/P4gNR6">AUDIO</a>]
-						[<a href="artifacts/billDalessandro/rav.pdf">RELATED PAPER</a>]
-						[<a href="artifacts/billDalessandro/slides.pptx">SLIDES</a>]
-					</td>
-				</tr>
-				<tr>
-					<td>
-						<img src="emojis/chip.svg" class="icon"/>
-					<td>
-						09/01/23: <a href="https://github.com/chipsec/chipsec">The ChipSec Project</a>, <a href="https://twitter.com/Lukiahas">Nathaniel Mitchell</a> and Dan Scott
-						[<a href="https://youtu.be/MJUv2QHORCc">VIDEO</a>]
-						[<a href="https://castro.fm/episode/h31FF2">AUDIO</a>]
-						[<a href="artifacts/chipsec/chipsec.pptx">SLIDES</a>]
-					</td>
-				</tr>
-				<tr>
-					<td>
-						<img src="emojis/rainbow.svg" class="icon"/>
-					<td>
-						08/12/23: <a href="https://arxiv.org/pdf/2301.09757.pdf">Packing Chromatic</a>, <a href="https://bsubercaseaux.github.io/">Bernardo Anibal Subercaseaux Roa</a>
-						[<a href="https://youtu.be/ZJ5EMGxRXpQ">VIDEO</a>]
-						[<a href="https://castro.fm/episode/C6o3iB">AUDIO</a>]
-					</td>
-				</tr>
-				<tr>
-					<td>
-						<img src="emojis/surf.svg" class="icon"/>
-					<td>
-						07/15/23: <a href="https://arxiv.org/abs/2210.17216">Symmetries, Flat Minima, and the Conserved Quantities of Gradient Flow</a>, <a href="https://b-zhao.github.io/">Bo Zhao</a>
-						[<a href="https://youtu.be/6tgJLV06MfE">VIDEO</a>]
-						[<a href="https://castro.fm/episode/CnsebH">AUDIO</a>]
-					</td>
-				</tr>
-				<tr>
-					<td>
-						<img src="emojis/wand.svg" class="icon"/>
-					<td>
-						06/30/23: <a href="https://app.algovera.ai/">ChatGPT on your Personal Corpus in Algovera</a>, <a href="https://twitter.com/richardblythman">Richard Blythman</a>
-						[<a href="https://youtu.be/F7i_jb11MGY">VIDEO</a>]
-						[<a href="https://castro.fm/episode/1aw4VU">AUDIO</a>]
-					</td>
-				</tr>
-				<tr>
-					<td>
-						<img src="emojis/kernel.svg" class="icon"/>
-					<td>
-						06/25/23: <a href="https://dl.acm.org/doi/abs/10.1145/3552326.3587458">Unikernel Linux (UKL)</a>, <a href="https://www.bu.edu/cs/profiles/thomas-unger/">Thomas Unger</a>
-					</td>
-				</tr>
-				<tr>
-					<td>
-						<img src="emojis/coral.svg" class="icon"/>
-					<td>
-						06/23/23: <a href="https://arxiv.org/abs/2202.02365">MariusGNN</a>, <a href="http://www.rogerwaleffe.com/">Roger Waleffe</a>
-						[<a href="https://youtu.be/7Fw9NlIWsDc">VIDEO</a>]
-						[<a href="https://castro.fm/episode/mT1Gwa">AUDIO</a>]
-					</td>
-				</tr>
-				<tr>
-					<td>
-						<img src="emojis/card.svg" class="icon"/>
-					<td>
-						06/16/23: <u>Infinite Games -- Strategies, Logic, Theory, and Computation</u>, <a href="http://jdh.hamkins.org/">Joel David Hamkins</a>
-						[<a href="https://youtu.be/W3X8zRofRpU">VIDEO</a>]
-						[<a href="https://castro.fm/episode/CHEa3e">AUDIO</a>]
-					</td>
-				</tr>
-				<tr>
-					<td>
-						<img src="emojis/art.svg" class="icon"/>
-					<td>
-						06/10/23: <u>Math is Not Relevant</u>, <a href="http://weiright.blogspot.com/2022/06/movie-review-everything-everywhere-all.html">Wei Sun</a>
-						[<a href="https://youtu.be/7idnCIxNGSo">VIDEO</a>]
-					</td>
-				</tr>
-				<tr>
-					<td>
-						<img src="emojis/ballot.svg" class="icon"/>
-					<td>
-						05/20/23: <a href="https://dcic-world.org/">A Data-Centric Introduction to Computing</a>, <a href="https://cs.brown.edu/~sk/">Shriram Krishnamurthi</a>
-						[<a href="https://youtu.be/HwPM0xMdiNU">VIDEO</a>]
-						[<a href="https://castro.fm/episode/hTF9oj">AUDIO</a>]
-					</td>
-				</tr>
-				<tr>
-					<td>
-						<img src="emojis/lungs.svg" class="icon"/>
-					<td>
-						05/13/23: <u>Automation of Medical Form Processing in the Context of Organ Transplantation</u>, <a href="https://www.math.arizona.edu/people/rychlik">Marek Rychlik</a> and <a href="https://deptmedicine.arizona.edu/profile/bekir-tanriover-md-mph-mba-fast">Beaker Tanriover</a>
-					</td>
-				</tr>
-				<tr>
-					<td>
-						<img src="emojis/baseball.svg" class="icon"/>
-					<td>
-						04/29/23: <u>Q&A on the Philosophy of Games</u>, <a href="https://www.amazon.com/Games-Agency-As-Art-Thinking/dp/0190052082">Christopher Ba Thi Nguyen</a> in conversation with <a href="http://weiright.blogspot.com/2022/06/movie-review-everything-everywhere-all.html">Wei Sun</a>
-						[<a href="https://youtu.be/wD3OnIbyENE">VIDEO</a>]
-						[<a href="https://spotifyanchor-web.app.link/e/Ev6rtC06ozb">AUDIO</a>]
-					</td>
-				</tr>
-				<tr>
-					<td>
-						<img src="emojis/ear.svg" class="icon"/>
-					<td>
-						04/21/23: <u>Quantity Calculus in Natural Language Semantics</u>, <a href="https://ling.bu.edu/people/coppock/">Elizabeth Coppock</a>
-						[<a href="https://youtu.be/0mTZ541kTGQ">VIDEO</a>]
-						[<a href="https://castro.fm/episode/jrKS5p">AUDIO</a>]
-					</td>
-				</tr>
-				<tr>
-					<td>
-						<img src="emojis/world-map.svg" class="icon"/>
-					<td>
-						04/02/23: <u>Path Finding with <a href="https://insights.sei.cmu.edu/blog/ghihorn-path-analysis-in-ghidra-using-smt-solvers/">Ghihorn</a></u>, <a href="https://resources.sei.cmu.edu/library/author.cfm?authorid=3415">Jeffrey Gennari</a>
-					</td>
-				</tr>
-				<tr>
-					<td>
-						<img src="emojis/pie.svg" class="icon"/>
-					<td>
-						03/17/23: <u>The Process, Challenges, Struggles & Joys of Creating "How to Design Programs"</u>, <a href="https://felleisen.org/matthias/">Matthias Felleisen</a>
-						[<a href="https://youtu.be/ODOI-qbvkwE">VIDEO</a>]
-						[<a href="https://castro.fm/episode/VSfBNa">AUDIO</a>]
-					</td>
-				</tr>
-				<tr>
-					<td>
-						<img src="emojis/ticket.svg" class="icon"/>
-					<td>
-						03/03/23: <a href="https://eta.st/2023/01/31/rail-tickets.html">Reverse Engineering UK Mobile Rail Tickets</a>, <a href="https://eta.st">eta</a>
-						[<a href="https://www.youtube.com/watch?v=X6StEcZWZkU">VIDEO</a>]
-						[<a href="https://castro.fm/episode/rLgnOK">AUDIO</a>]
-					</td>
-				</tr>
-				<tr>
-					<td>
-						<img src="emojis/orangutan.svg" class="icon"/>
-					<td>
-						02/12/23: <a href="https://web3isgoinggreat.com/">Web3 is Going Just Great</a>, <a href="https://www.mollywhite.net/">Molly White</a>
-						[<a href="https://youtu.be/DQxNYFae3cU">VIDEO</a>]
-						[<a href="https://castro.fm/episode/VZeWCq">AUDIO</a>]
-					</td>
-				</tr>
-				<tr>
-					<td>
-						<img src="emojis/tablet.svg" class="icon"/>
-					<td>
-						02/03/23: <u>How to Give a Good Mathematical Presentation</u>, <a href="http://www.math.ryerson.ca/~abonato/">Anthony Bonato</a>
-						[<a href="https://youtu.be/ZmLoQDWEZgg">VIDEO</a>]
-						[<a href="https://castro.fm/episode/NzEZlQ">AUDIO</a>]
-					</td>
-				</tr>
-				<tr>
-					<td>
-						<img src="emojis/geiger.svg" class="icon"/>
-					<td>
-						01/28/23: <u>Implications of Model-Based Phil/Sci for ML</u>, <a href="http://mel-andrews.com/">Mel Andrews</a>
-						[<a href="https://castro.fm/episode/ZKljcy">AUDIO</a>]
-					</td>
-				</tr>
-				<tr>
-					<td>
-						<img src="emojis/shush.svg" class="icon"/>
-					<td>
-						01/15/23: <a href="https://www.tryquiet.org/">Quiet: a Web3 Alternative to Discord</a>, <a href="https://twitter.com/holmesworcester">Holmes Wilson</a>
-						[<a href="https://youtu.be/jwJLd3Qc9TI">VIDEO</a>]
-					</td>
-				</tr>
-				<tr>
-					<td>
-						<img src="emojis/unlocked.svg" class="icon"/>
-					<td>
-						01/06/23: <u>Q&A: AppSec from OWASP to Present</u>, <a href="http://www.viega.org/">John Viega</a>
-						[<a href="https://castro.fm/episode/sF7wfa">AUDIO</a>]
-					</td>
-				</tr>
-				<tr>
-					<td>
-						<img src="emojis/car.svg" class="icon"/>
-					<td>
-						12/10/22: <u>Challenges Encountered Building Slow Roads</u>, <a href="https://twitter.com/anslogen">Anslo</a>
-					</td>
-				</tr>
-				<tr>
-					<td>
-						<img src="emojis/hole.svg" class="icon"/>
-					<td>
-						12/03/22: <a href="https://en.wikipedia.org/wiki/Depths_of_Wikipedia">Depths of Wikipedia</a>, <a href="https://twitter.com/anniierau">Annie Rauwerda</a>
-						[<a href="https://youtu.be/nxgiId6JXYk">VIDEO</a>]
-						[<a href="https://castro.fm/episode/8OXzq0">AUDIO</a>]
-					</td>
-				</tr>
-				<tr>
-					<td>
-						<img src="emojis/move.svg" class="icon"/>
-					<td>
-						11/19/22: <a href="https://eprint.iacr.org/2022/842">Nearly Optimal Property Preserving Hashing</a>, <a href="https://www.khoury.northeastern.edu/home/lakyahtyner/index.html">LaKyah Tyner</a>
-						[<a href="https://youtu.be/oDz2QerJtJM">VIDEO</a>]
-						[<a href="https://castro.fm/episode/7n2eXG">AUDIO</a>]
-					</td>
-				</tr>
-				<tr>
-					<td>
-						<img src="emojis/8.svg" class="icon"/>
-					<td>
-						11/06/22: <u>Intro to Zero Knowledge Proofs</u>, <a href="https://cs-people.bu.edu/kaptchuk/">Gabriel Kaptchuk</a>
-					</td>
-				</tr>
-				<tr>
-					<td>
-						<img src="emojis/whoami.svg" class="icon"/>
-					<td>
-						10/23/22: <u>Formal Analysis of Ethereum's GossipSub in ACL2s</u>, <a href="https://ankitku.github.io/">Ankit Kumar</a> and <a href="https://mxvh.pl">Max von Hippel</a>
-					</td>
-				</tr>
-				<tr>
-					<td>
-						<img src="emojis/amulet.svg" class="icon"/>
-					<td>
-						10/14/22: <u>Cryptography with Quantum States</u>, <a href="https://www.cs.utexas.edu/~kretsch/">William Kretschmer</a>
-						[<a href="https://castro.fm/episode/1IUSHX">AUDIO</a>]
-						[<a href="https://youtu.be/Ee_zt6AfMEM">VIDEO</a>]
-					</td>
-				</tr>
-				<tr>
-					<td>
-						<img src="emojis/numbers.svg" class="icon"/>
-					<td>
-						10/08/22: <u>Mock Theta Functions</u>, <a href="https://www.amherst.edu/people/facstaff/afolsom">Amanda Folsom</a>.
-						[ALSO:
-							<a href="https://afolsom.people.amherst.edu/Folsom_Notices_2019.pdf">1</a>,
-							<a href="https://afolsom.people.amherst.edu/Folsom-NoticesWhatIsDec.pdf">2</a>,
-							<a href="https://afolsom.people.amherst.edu/JNT_Perspectives_Folsom_publ.pdf">3</a>,
-							<a href="https://m.youtube.com/watch?v=sobBCL4ImKs">4</a>,
-							<a href="https://people.math.sc.edu/thornef/dartmouth.pdf">5</a>]
-					</td>
-				</tr>
-				<tr style="background-color:LightGray;">
-					<td>
-						<img src="emojis/cafe.svg" class="icon"/>
-					<td>
-						09/17/22: <u>Math Café #11: Prep for Dr. Folsom's Talk</u>, <a href="https://www.horizonquantum.com/team-members/ammar-husain">Ammar Husain</a>.
-						[<a href="artifacts/ammarHussein/Modular_Form_Background.pdf">SLIDES</a>]
-					</td>
-				</tr>
-				<tr>
-					<td>
-						<img src="emojis/torch.svg" class="icon"/>
-					<td>
-						09/16/22: <u>A Conversation on Theorem Provers and Vulnerability Research</u>, <a href="https://addisoncrump.info/">Addison Crump</a> and <a href="https://heinen.dev">Teddy Heinen</a>
-					</td>
-				</tr>
-				<tr style="background-color:LightGray;">
-					<td>
-						<img src="emojis/cafe.svg" class="icon"/>
-					<td>
-						09/15/22: <a href="https://bstn.cc/math">Math Café #10: Infinite Dimensional Analysis (Semi-Continuity)</a>, <a href="https://cs-people.bu.edu/czhang03/">Cheng Zhang</a>
-					</td>
-				</tr>
-				<tr style="background-color:LightGray;">
-					<td>
-						<img src="emojis/cafe.svg" class="icon"/>
-					<td>
-						09/04/22: <a href="https://bstn.cc/math">Math Café #9: Infinite Dimensional Analysis (Continuity & Compactness)</a>, <a href="https://cs-people.bu.edu/czhang03/">Cheng Zhang</a>
-					</td>
-				</tr>
-				<tr>
-					<td>
-						<img src="emojis/xray.svg" class="icon"/>
-					<td>
-						09/03/22: <u>A Conversation on Reverse Engineering Tooling</u>, <a href="https://twitter.com/ztehryan">Matteo Giordiano</a>
-					</td>
-				</tr>
-				<tr style="background-color:LightGray;">
-					<td>
-						<img src="emojis/cafe.svg" class="icon"/>
-					<td>
-						08/27/22: <u>Blockchain Café #2: Applied Cryptography and APIs</u>, <a href="https://brennonbrimhall.github.io/about/">Brennon Brimhall</a>
-					</td>
-				</tr>
-				<tr style="background-color:LightGray;">
-					<td>
-						<img src="emojis/cafe.svg" class="icon"/>
-					<td>
-						08/07/22: <a href="https://bstn.cc/math">Math Café #8: Infinite Dimensional Analysis (Continuity)</a>, <a href="https://cs-people.bu.edu/czhang03/">Cheng Zhang</a>
-					</td>
-				</tr>
-				<tr>
-					<td>
-						<img src="emojis/cellular.svg" class="icon"/>
-					<td>
-						08/05/22: <a href="https://blog.adaptivemobile.com/the-mobile-network-battlefield-in-ukraine-part-1">The Mobile Network Battlefield in Ukraine</a>, <a href="https://twitter.com/mcdaidc">Cathal McDaid</a>
-					</td>
-				</tr>
-				<tr>
-					<td>
-						<img src="emojis/nuclear-man.svg" class="icon"/>
-					<td>
-						07/29/22: <u>A Conversation on Reverse Engineering and Symbolic Execution</u>, <a href="https://github.com/Boyan-MILANOV">Boyan Milanov</a>
-					</td>
-				</td>
-				<tr style="background-color:LightGray;">
-					<td>
-						<img src="emojis/cafe.svg" class="icon"/>
-					</td>
-					<td>
-						07/17/22: <a href="https://bstn.cc/math">Math Café #7: Infinite Dimensional Analysis (Filters)</a>, <a href="https://cs-people.bu.edu/czhang03/">Cheng Zhang</a>
-					</td>
-				</tr>
-				<tr>
-					<td>
-						<img src="emojis/crypto.svg" class="icon"/>
-					</td>
-					<td>
-						07/16/22: <u>The Crypto Crash(es)</u>, <a href="https://www.linkedin.com/in/cristiano-fortuna-couto-teixeira">Cristiano Teixeira</a>
-					</td>
-				</tr>
-				<tr style="background-color:LightGray;">
-					<td>
-						<img src="emojis/cafe.svg" class="icon"/>
-					</td>
-					<td>
-						07/10/22: <a href="https://bstn.cc/math">Math Café #6: Infinite Dimensional Analysis (Topologies & Nets)</a>, <a href="https://cs-people.bu.edu/czhang03/">Cheng Zhang</a>
-						[<a href="artifacts/mathCafes/nets.txt">NOTES</a>]
-					</td>
-				</tr>
-				<tr>
-					<td>
-						<img src="emojis/recycle.svg" class="icon"/>
-					</td>
-					<td>
-						06/19/22: <a href="https://onlinelibrary.wiley.com/doi/full/10.1111/jiec.13239">Assessing Recycling, Displacement, and Environmental Impacts using an Economics-Informed Material System Model</a>, <a href="https://twitter.com/ryterjohn?lang=en">John Ryter</a>
-						[<a href="https://castro.fm/episode/cMaaM4">AUDIO</a>]
-						[<a href="https://youtu.be/pXqaL9NP6cw">VIDEO</a>]
-					</td>
-				</tr>
-				<tr>
-					<td>
-						<img src="emojis/moving.money.svg" class="icon"/>
-					</td>
-					<td>
-						06/11/22: <u>An Open Discussion on Unionizing Graduate Students</u>, <a href="https://twitter.com/JacobM_AL?s=20">Jacob Morrison</a> and <a href="https://uaw.org/">Jeremy Stepansky</a>
-					</td>
-				</tr>
-				<tr style="background-color:LightGray;">
-					<td>
-						<img src="emojis/cafe.svg" class="icon"/>
-					</td>
-					<td>
-						06/05/22: <a href="https://bstn.cc/math">Math Café #5: The Collatz Conjecture</a>, <a href="https://mxvh.pl">Max von Hippel</a>
-					</td>
-				</tr>
-				<tr>
-					<td>
-						<img src="emojis/tracks.svg" class="icon"/>
-					</td>
-					<td>
-						05/28/22: <a href="https://arxiv.org/abs/2111.00396">Efficiently Modeling Long Sequences with Structured State Spaces</a>, <a href="http://web.stanford.edu/~albertgu/">Albert Gu</a>
-					</td>
-				</tr>
-				<tr>
-					<td>
-						<img src="emojis/thermometer.svg" class="icon"/>
-					</td>
-					<td>
-						05/20/22: <u>Hybrid Systems: Not Just For Cars Anymore!</u>, <a href="https://sites.google.com/site/kimayersmath/home">Kimberly Ayers</a>
-						[<a href="https://castro.fm/episode/FMA6fd">AUDIO</a>]
-						[<a href="https://youtu.be/AC1Ji7aEVVM">VIDEO</a>]
-					</td>
-				</tr>
-				<tr>
-					<td>
-						<img src="emojis/star.svg" class="icon"/>
-					</td>
-					<td>
-						05/13/22: <a href="https://hal.archives-ouvertes.fr/hal-00019978/document">The Generalized Star Height Problem</a>, <a href="https://www.irif.fr/~jep/">Jean-Eric Pin</a>
-						[<a href="https://youtu.be/Fe_iMIOU8MQ">VIDEO</a>]
-						[<a href="https://castro.fm/episode/yjtbiO">AUDIO</a>]
-					</td>
-				</tr>
-				<tr style="background-color:LightGray;">
-					<td>
-						<img src="emojis/cafe.svg" class="icon"/>
-					</td>
-					<td>
-						05/08/22: <a href="https://bstn.cc/math">Math Café #4: Selected Topics in Kleene Algebra</a>, <a href="https://cs-people.bu.edu/czhang03/">Cheng Zhang</a>
-					</td>
-				</tr>
-				<tr style="background-color:LightGray;">
-					<td>
-						<img src="emojis/cafe.svg" class="icon"/>
-					</td>
-					<td>
-						05/07/22: <a href="https://bstn.cc/math">Math Café #3: Prep for Dr. Pin's Talk</a>, <a href="https://mxvh.pl">Max von Hippel</a> [<a href="artifacts/jeanEricPin/prep.pdf">NOTES</a>] [<a href="artifacts/maxvonHippel/pin-prep.pdf">SLIDES</a>] [<a href="https://youtu.be/TBfP08BdFlU">VIDEO</a>] [<a href="https://castro.fm/episode/Icol2a">AUDIO</a>]
-					</td>
-				</tr>
-				<tr>
-					<td>
-						<img src="emojis/snitch.svg" class="icon"/>
-					</td>
-					<td>
-						04/15/22: <a href="https://arxiv.org/abs/2003.05503">When Memory Guards are Crooked and Become Speculating Snitches</a>, <a href="https://mbr.sh/">Andrea Mambretti</a>
-						[<a href="https://youtu.be/oPfHL9IDeNQ">VIDEO</a>]
-						[<a href="https://castro.fm/episode/jnbmiA">AUDIO</a>]
-					</td>
-				</tr>
-				<tr>
-					<td>
-						<img src="emojis/worm.svg" class="icon"/>
-					</td>
-					<td>
-						03/20/22: <u>An Open Conversation on Web3</u>, <a href="https://dune.foundation/">Spice DAO</a>
-						[<a href="https://youtu.be/eoNOI3Ox_CM">VIDEO</a>]
-						[<a href="https://castro.fm/episode/u1KGhN">AUDIO</a>]
-					</td>
-				</tr>
-				<tr>
-					<td>
-						<img src="emojis/cheese.svg" class="icon"/>
-					</td>
-					<td>
-						03/13/22: <a href="https://arxiv.org/abs/2202.09470">Automated Attack Synthesis by Extracting Finite State Machines from Protocol Specification Documents</a>, <a href="https://mlpacheco.github.io/">Maria Leonor Pacheco</a> and <a href="https://mxvh.pl/">Max von Hippel</a>
-						[<a href="https://github.com/RFCNLP">CODE</a>]
-					</td>
-				</tr>
-				<tr>
-					<td>
-						<img src="emojis/yellow.svg" class="icon"/>
-					</td>
-					<td>
-						03/12/22: <u>Live Coding: Making a Wordle Scraper and Solver</u>, <a href="https://github.com/Denbox">Jacob Denbeaux</a>
-						[<a href="https://github.com/bstncc/wordle_comcom">CODE</a>]
-						[<a href="https://youtu.be/6l1Mabr0IGQ">VIDEO</a>]
-						[<a href="https://castro.fm/episode/7kVAEe">AUDIO</a>]
-					</td>
-				</tr>
-				<tr>
-					<td>
-						<img src="emojis/sunflower.svg" class="icon"/>
-					</td>
-					<td>
-						03/09/22: <u>Q&A Regarding the War in Ukraine</u>, <a href="https://rusi.org/people/von-hippel">Karin von Hippel</a>
-					</td>
-				</tr>
-				<tr>
-					<td>
-						<img src="emojis/saw.svg" class="icon"/>
-					</td>
-					<td>
-						03/05/22: <u>Seize the Means of Computation: the Big Tech Disassembly Manual</u>, <a href="https://craphound.com/">Cory Doctorow</a>
-						[<a href="https://youtu.be/QzzIftKz600">VIDEO</a>]
-						[<a href="https://castro.fm/episode/cBq9TF">AUDIO</a>]
-					</td>
-				</tr>
-				<tr style="background-color:LightBlue;">
-					<td>
-						<img src="emojis/homework.svg" class="icon"/>
-					</td>
-					<td>
-						03/04/22: <a href="https://bstn.cc/math">Topology Homework Session #5</a>: <a href="https://www.cs.cornell.edu/fbs/publications/DefLiveness.pdf">Liveness & Safety Properties</a>
-					</td>
-				</tr>
-				<tr>
-					<td>
-						<img src="emojis/mirror.svg" class="icon"/>
-					</td>
-					<td>
-						02/17/22: <a href="https://arxiv.org/abs/1403.5752">Quantum Computing in Plato's Cave</a>, <a href="https://researchers.mq.edu.au/en/persons/daniel-burgarth">Daniel Burgarth</a>
-						[<a href="https://youtu.be/Mmda7iOniIU">VIDEO</a>]
-						[<a href="https://castro.fm/episode/AIK95k">AUDIO</a>]
-					</td>
-				</tr>
-				<tr style="background-color:LightGray;">
-					<td>
-						<img src="emojis/cafe.svg" class="icon"/>
-					</td>
-					<td>
-						02/11/22: <a href="https://bstn.cc/math">Math Café #2</a>, lead by <a href="https://stites.io/">Sam Stites</a>
-					</td>
-				</tr>
-				<tr style="background-color:LightBlue;">
-					<td>
-						<img src="emojis/homework.svg" class="icon"/>
-					</td>
-					<td>
-						02/10/22: <a href="https://bstn.cc/math">Topology Homework Session #4: Homotopy Equivalence</a>
-					</td>
-				</tr>
-				<tr style="background-color:LightBlue;">
-					<td>
-						<img src="emojis/homework.svg" class="icon"/>
-					</td>
-					<td>
-						02/09/22: <a href="https://bstn.cc/math">Topology Homework Session #3: Continuity & Nullhomotopy</a>
-					</td>
-				</tr>
-				<tr>
-					<td>
-						<img src="emojis/horse.svg" class="icon"/>
-					</td>
-					<td>
-						02/06/22: <a href="https://www.trojansource.codes/">Trojan Source Attacks</a>, <a href="https://www.cl.cam.ac.uk/~ndb40/">Nicholas Boucher</a>
-						[<a href="https://youtu.be/3Z0oB4gz8nA">VIDEO</a>]
-						[<a href="https://castro.fm/episode/ppF8ye">AUDIO</a>]
-					</td>
-				</tr>
-				<tr>
-					<td>
-						<img src="emojis/handshake.svg" class="icon"/>
-					</td>
-					<td>
-						01/22/22: <u>How to Meet Interesting People by Accident & Design</u>, <a href="https://randomstring.org/~dsr/">Dan Ritter</a>
-					</td>
-				</tr>
-				<tr style="background-color:LightGray;">
-					<td>
-						<img src="emojis/cafe.svg" class="icon"/>
-					</td>
-					<td>
-						01/20/22: <a href="https://bstn.cc/math">Math Café #1</a>, lead by <a href="https://stites.io/">Sam Stites</a>
-					</td>
-				</tr>
-				<tr style="background-color:LightBlue;">
-					<td>
-						<img src="emojis/homework.svg" class="icon"/>
-					</td>
-					<td>
-						01/14/22: <a href="https://bstn.cc/math">Topology Homework Session #2: The Quotient Topology</a>
-					</td>
-				</tr>
-				<tr style="background-color:LightBlue;">
-					<td>
-						<img src="emojis/homework.svg" class="icon"/>
-					</td>
-					<td>
-						01/13/22: <a href="https://bstn.cc/math">Topology Homework Session #1: The Zariski Topology over spec R</a>
-					</td>
-				</tr>
-				<tr>
-					<td>
-						<img src="emojis/c2.svg" class="icon"/>
-					</td>
-					<td>
-						01/08/22: <u>Covert C2 Channels</u>, <a href="https://www.youtube.com/watch?v=j2hGdmnoHU0">Kai Bernardini</a>
-						[<a href="https://youtu.be/OWHfoI27q_0">VIDEO</a>]
-						[<a href="https://anchor.fm/bostoncc/episodes/010822-Covert-C2-Channels-with-Kai-Bernardini-e1cml7l">AUDIO</a>]
-						[<a href="https://github.com/kbsec">GITHUB</a>]
-						[<a href="https://twitter.com/KB_Intel">TWITTER</a>]
-					</td>
-				</tr>
-				<tr style="background-color:LightGray;">
-					<td>
-						<img src="emojis/cafe.svg" class="icon"/>
-					</td>
-					<td>
-						12/15/21: <u>Blockchain Café #1: Formal Methods for Smart Contracts</u>
-						[<a href="https://www.usenix.org/system/files/sec21-so.pdf">PAPER</a>]
-					</td>
-				</tr>
-				<tr>
-					<td>
-						<img src="emojis/ruler.svg" class="icon"/>
-					</td>
-					<td>
-						12/04/21: <u>Feynman Integrals for a Mathematical Audience</u>, <a href="https://4gravitons.com/">Matt von Hippel</a>
-						[<a href="https://youtu.be/6ckQnt5IvYQ">VIDEO</a>]
-						[<a href="https://castro.fm/episode/pIayPg">AUDIO</a>]
-					</td>
-				</tr>
-				<tr>
-					<td>
-						<img src="emojis/dna.svg" class="icon"/>
-					</td>
-					<td>
-						12/03/21: <u>Aesthetic and Organic Complexity</u>, <a href="https://tylerxhobbs.com">Tyler Hobbs</a> and <a href="https://wcresko.github.io/lab_website/">Bill Cresco</a>, moderated by Joe and <a href="https://www.reedhilderbrand.com/people/anya_sheldon">Anya</a>
-						[<a href="https://youtu.be/1W6_NM92P5g">VIDEO</a>]
-						[<a href="https://castro.fm/episode/B4v9Er">AUDIO</a>]
-					</td>
-				</tr>
-				<tr>
-					<td>
-						<img src="emojis/judge.svg" class="icon"/>
-					</td>
-					<td>
-						10/29/21: <u>It's Just Math and Other Lies We Tell Ourselves</u>, <a href="https://sites.google.com/view/jadeedenstarmaster/home">Jade Edenstar Master</a>
-					</td>
-				</tr>
-				<tr>
-					<td>
-						<img src="emojis/tree.svg" class="icon"/>
-					</td>
-					<td>
-						10/24/21: <a href="https://arxiv.org/abs/2108.10061">An Extensible and Modular Design and Implementation of Monte Carlo Tree Search for the JVM</a>, <a href="https://larkz.github.io/">Larkin Liu</a> and (in attendance) <a href="https://www.linkedin.com/in/jun-tao-luo">Jun Tao Luo</a>
-						[<a href="https://youtu.be/bVpUlJU-piA">VIDEO</a>]
-						[<a href="https://castro.fm/episode/u3MH6b">AUDIO</a>]
-					</td>
-				</tr>
-				<tr>
-					<td>
-						<img src="emojis/string.svg" class="icon"/>
-					</td>
-					<td>
-						10/15/21: <a href="https://fmcad.org/FMCAD21/accepted/">Mathematical Programming Modulo Strings</a>, <a href="https://ankitku.github.io/">Ankit Kumar</a>
-						[<a href="https://youtu.be/doeauZv3JrE">VIDEO</a>]
-						[<a href="https://castro.fm/episode/335ris">AUDIO</a>]
-					</td>
-				</tr>
-				<tr>
-					<td>
-						<img src="emojis/julia.svg" class="icon"/>
-					</td>
-					<td>
-						10/09/21: <u>Types in PL Research vs Types in Julia</u>, <a href="https://julbinb.github.io/">Julia Belyakova</a>
-						[<a href="https://youtu.be/JNxrX2XvZIY">VIDEO</a>]
-						[<a href="https://castro.fm/episode/YHB3so">AUDIO</a>]
-					</td>
-				</tr>
-				<tr>
-					<td>
-						<img src="emojis/moving.money.svg" class="icon"/>
-					</td>
-					<td>
-						09/25/21: <u>Labor and Unions</u>, <a href="https://twitter.com/JacobM_AL?s=20">Jacob Morrison</a> and Adam Keller
-						[<a href="http://www.nugradunion.com/">NU Grad Union</a>]
-						[ALSO:
-							<a href="https://www.massnurses.org/">1</a>,
-							<a href="https://labornotes.org/strikes">2</a>,
-							<a href="https://labornotes.org/beatingapathy">3</a>,
-							<a href="https://iww.org/resources/">4</a>,
-							<a href="https://twitter.com/LaborReporters/status/1430985595954864133?s=20">5</a>,
-							<a href="https://inthesetimes.com/">6</a>,
-							<a href="https://www.thestrikewave.com/original-content">7</a>,
-							<a href="https://workingpeople.libsyn.com/">8</a>,
-							<a href="https://open.spotify.com/episode/33aQTLj1QsnVovKah4MX96?si=mYCFqH-4RFCaZJfmXtQVXg&utm_source=copy-link&dl_branch=1">9</a>,
-							<a href="https://open.spotify.com/episode/1aLZNro2l5Uz4YOhqJFPfW?si=2uCwuLqGTzWdSAyELBII6w&utm_source=copy-link&dl_branch=1">10</a>
-						]
-					</td>
-				</tr>
-				<tr>
-					<td>
-						<img src="emojis/knife.svg" class="icon"/>
-					</td>
-					<td>
-						09/18/21: <a href="https://pwn.college/">Live <strike>Coding</strike> Hacking</a>, <a href="https://mxvh.pl/">Max von Hippel</a> (pilot) and <a href="https://github.com/Denbox">Jacob Denbeaux</a> (copilot)
-					</td>
-				</tr>
-				<tr>
-					<td>
-						<img src="emojis/lion.svg" class="icon"/>
-					</td>
-					<td>
-						09/12/21: <u>More Category Theory for More Cybernetics</u>, <a href="https://matteocapucci.wordpress.com/">Matteo Capucci</a>
-						[<a href="https://youtu.be/4K3FHVqlBb8">VIDEO</a>]
-						[<a href="https://castro.fm/episode/YnUCAk">AUDIO</a>]
-					</td>
-				</tr>
-				<tr>
-					<td>
-						<img src="emojis/analog.svg" class="icon"/>
-					</td>
-					<td>
-						08/28/21: <u>Compilation Techniques for Reconfigurable Analog Devices</u>, <a href="http://people.csail.mit.edu/sachour/">Sara Achour</a>
-						[<a href="https://youtu.be/HrBNXSJjwYc">VIDEO</a>]
-						[<a href="https://castro.fm/episode/4lUknY">AUDIO</a>]
-					</td>
-				</tr>
-				<tr>
-					<td>
-						<img src="emojis/puzzle.svg" class="icon"/>
-					</td>
-					<td>
-						08/20/21: <u>An Open Question in Category Theory</u>, <a href="https://cos.northeastern.edu/people/alex-martsinkovsky/">Alex Martsinkovsky</a>
-						[<a href="artifacts/alexMartsinkovsky/notes.pdf">NOTES</a>]
-					</td>
-				</tr>
-				<tr>
-					<td>
-						<img src="emojis/database.svg" class="icon"/>
-					</td>
-					<td>
-						08/14/21: <a href="https://arxiv.org/abs/2105.14307">Minimal Length Representations of Database Provenance</a>, <a href="https://nehamakhija.github.io/">Neha Makhija</a>
-					</td>
-				</tr>
-				<tr>
-					<td>
-						<img src="emojis/construction.svg" class="icon"/>
-					</td>
-					<td>
-						07/30/21: <a href="https://ieeesb.org/index.html#papers">Structural Attacks on Local Routing in Payment Channel Networks</a>, <a href="https://ben-weintraub.com/">Ben Weintraub</a>
-						[<a href="https://youtu.be/x_HUwZkttxM">VIDEO</a>]
-						[<a href="https://castro.fm/episode/QhHfa8">AUDIO</a>]
-					</td>
-				</tr>
-				<tr>
-					<td>
-						<img src="emojis/chess.svg" class="icon"/>
-					</td>
-					<td>
-						07/24/21: <u>Linear Haskell</u>, <a href="https://www.khoury.northeastern.edu/people/artem-pelenitsyn/">Artem Pelenitsyn</a>
-						[<a href="http://staff.mmcs.sfedu.ru/~ulysses/Talks/2021-linear-haskell/">SLIDES</a>]
-						[<a href="https://youtu.be/ODjWURRRjxA">VIDEO</a>]
-						[<a href="https://castro.fm/episode/zntclQ">AUDIO</a>]
-					</td>
-				</tr>
-				<tr style="background-color:LightGray;">
-					<td>
-						<img src="emojis/cafe.svg" class="icon"/>
-					</td>
-					<td>
-						07/10/21: <u>Biology Café #1: The Illogical Nature of Chemical Nomenclature</u>, <a href="https://www.ems.arizona.edu/2021-2022-leadership-team">Sophia von Hippel</a>
-						[<a href="artifacts/sophiavonHippel/chemical.notation.pdf">NOTES</a>]
-						[<a href="https://youtu.be/c4JNJM2hyKI">VIDEO</a>]
-						[<a href="https://castro.fm/episode/1RfMwK">AUDIO</a>]
-					</td>
-				</tr>
-				<tr>
-					<td>
-						<img src="emojis/work.svg" class="icon"/>
-					</td>
-					<td>
-						06/25/21: <u>Q&A</u>, <a href="https://galois.com/team/john-launchbury/">John Launchbury</a>
-					</td>
-				</tr>
-				<tr>
-					<td>
-						<img src="emojis/parrot.svg" class="icon"/>
-					</td>
-					<td>
-						06/13/21: <a href="https://direct.mit.edu/tacl/article/doi/10.1162/tacl_a_00357/97782/Modeling-Content-and-Context-with-Deep-Relational">Modeling Content and Context with Deep Relational Learning</a>, <a href="https://mlpacheco.github.io/">Maria Leonor Pacheco</a>
-						[<a href="https://youtu.be/e6c3HVhZ5NA">VIDEO</a>]
-						[<a href="https://castro.fm/episode/1SW3x8">AUDIO</a>]
-					</td>
-				</tr>
-				<tr style="background-color:LightGray;">
-					<td>
-						<img src="emojis/cafe.svg" class="icon"/>
-					</td>
-					<td>
-						06/06/21: <u>Quantum Café #5: Formal Methods (revisited)</u>
-					</td>
-				</tr>
-				<tr>
-					<td>
-						<img src="emojis/yarn.svg" class="icon"/>
-					</td>
-					<td>
-						05/29/21: <u>Homotopy Type Theory 101</u>, <a href="https://www.cs.cmu.edu/~cangiuli/">Carlo Angiuli</a>
-						[<a href="https://youtu.be/VMqF06fDljU">VIDEO</a>]
-						[<a href="https://castro.fm/episode/mjisfx">AUDIO</a>]
-					</td>
-				<tr>
-					<td>
-						<img src="emojis/money.svg" class="icon"/>
-					</td>
-					<td>
-						05/15/21: <u>How Does a Health Actuary Estimate a Reserve?</u>, <a href="https://www.actuarialtoolkit.com/">Paul Johnson</a>
-						[<a href="https://www.youtube.com/channel/UCJJidAakXGTDoa68IhdQRuw">CHANNEL</a>]
-					</td>
-				</tr>
-				<tr>
-					<td>
-						<img src="emojis/bolt.svg" class="icon"/>
-					</td>
-					<td>
-						05/01/21: <u>Assembly Programming for M1</u>, <a href="https://tuzz.tech">Chris Patuzzo</a>
-						[<a href="artifacts/chrisPatuzzo/assembly.pdf">SLIDES</a>]
-					</td>
-				</tr>
-				<tr>
-					<td>
-						<img src="emojis/collaboration.svg" class="icon"/>
-					</td>
-					<td>
-						04/25/21: <u>Open Discussion</u>
-					</td>
-				</tr>
-				<tr style="background-color:LightGray;">
-					<td>
-						<img src="emojis/cafe.svg" class="icon"/>
-					</td>
-					<td>
-						04/17/21: <u>Quantum Café #4: Grand Unified Theories</u>
-					</td>
-				</tr>
-				<tr>
-					<td>
-						<img src="emojis/wave.svg" class="icon"/>
-					</td>
-					<td>
-						04/11/21: <a href="https://projectwaves.net">Project Waves</a>, <a href="https://github.com/Denbox">Jacob Denbeaux</a>
-						[<a href="https://www.theverge.com/2021/4/12/22379848/fcc-speed-test-app-google-apple-download-broadband-maps-coverage">RELATED NEWS</a>]
-					</td>
-				</tr>
-				<tr>
-					<td>
-						<img src="emojis/ninja.svg" class="icon"/>
-					</td>
-					<td>
-						03/27/21: <u>Introduction to Operational Security</u>, <a href="https://gru.gq/">The Grugq</a>
-					</td>
-				</tr>
-				<tr style="background-color:LightGray;">
-					<td>
-						<img src="emojis/cafe.svg" class="icon"/>
-					</td>
-					<td>
-						03/21/21: <u>Quantum Café #3: Syntax and Semantics</u>
-						[<a href="artifacts/maxvonHippel/grammars.txt">NOTES</a>]
-					</td>
-				</tr>
-				<tr>
-					<td>
-						<img src="emojis/lock.svg" class="icon"/>
-					</td>
-					<td>
-						03/13/21: <u>Concurrent Interpretations of Authorization Logic</u>, <a href="https://akhirsch.science/">Andrew K. Hirsch</a>
-						[PAPERS: <a href="https://akhirschwebsite.files.wordpress.com/2020/10/csfcameraready.pdf">1</a>,<a href="https://akhirschwebsite.files.wordpress.com/2020/10/ccs2013cameraready.pdf">2</a>,<a href="https://www.fabriziomontesi.com/files/cm16_facs.pdf">3</a>]
-						[<a href="artifacts/andrewKHirsch/andrew.pptx">SLIDES</a>]
-					</td>
-				</tr>
-				<tr style="background-color:LightGray;">
-					<td>
-						<img src="emojis/cafe.svg" class="icon"/>
-					</td>
-					<td>
-						02/28/21: <u>Quantum Café #2: Noisy Quantum Gates</u>
-					</td>
-				</tr>
-				<tr>
-				<tr>
-					<td>
-						<img src="emojis/nuclear.svg" class="icon"/>
-					</td>
-					<td>
-						02/27/21: <u>Nuclear Non Proliferation - Role of Citizen Scientists</u>, <a href="https://spia.princeton.edu/faculty/fvhippel">Frank N. von Hippel</a>
-						[<a href="https://www.aps.org/policy/nuclear/index.cfm">COALITION</a>]
-					</td>
-				</tr>
-				<tr>
-					<td>
-						<img src="emojis/knot.svg" class="icon"/>
-					</td>
-					<td>
-						02/21/21: <u>Quantum Series #2: Entanglement</u>, <a href="http://billykalfus.com">Billy Kalfus</a>
-					</td>
-				</tr>
-				<tr style="background-color:LightGray;">
-					<td>
-						<img src="emojis/cafe.svg" class="icon"/>
-					</td>
-					<td>
-						02/13/21: <u>Quantum Café #1: Formal Methods</u>
-					</td>
-				</tr>
-				<tr>
-					<td>
-						<img src="emojis/abacus.svg" class="icon"/>
-					</td>
-					<td>
-						02/07/21: <u>Quantum Series #1: Fundamentals</u>, <a href="http://billykalfus.com">Billy Kalfus</a>
-					</td>
-				</tr>
-				<tr>
-					<td>
-						<img src="emojis/palette.svg" class="icon"/>
-					</td>
-					<td>
-						01/24/21: <u>Algorithmic Artwork</u>, <a href="https://tylerxhobbs.com">Tyler Hobbs</a>
-					</td>
-				</tr>
-				<tr>
-					<td>
-						<img src="emojis/cat.svg" class="icon"/>
-					</td>
-					<td>
-						01/09/21: <u>Category Theory for Cybernetics</u>, <a href="https://julesh.com/">Jules Hedges</a>
-					</td>
-				</tr>
-				<tr>
-					<td>
-						<img src="emojis/tools.svg" class="icon"/>
-					</td>
-					<td>
-						12/27/20: <u>Dilemma Languages & Moral Codes</u>, <a href="https://mxvh.pl">Max von Hippel</a>
-						[<a href="artifacts/maxvonHippel/dilemma.pdf">NOTES</a>]
-						[<a href="https://www.amazon.com/Formal-Ethics-Harry-J-Gensler-ebook/dp/B000P0JMEA">RELATED</a>]
-					</td>
-				</tr>
-				<tr>
-					<td>
-						<img src="emojis/bio.svg" class="icon"/>
-					</td>
-					<td>
-						12/13/20: <u>Compositional PCA for Microbiome data</u>, <a href="https://twitter.com/jamietmorton?lang=en">Jamie Morton</a>
-						[<a href="https://github.com/mortonjt/catvae">CODE</a>]
-					</td>
-				</tr>
-				<tr>
-					<td>
-						<img src="emojis/bomb.svg" class="icon"/>
-					</td>
-					<td>
-						11/29/20: <u>Parsing Real-World Data Formats</u>, <a href="https://prashant.at/">Prashant Anantharaman</a>
-						[<a href="https://prashant.at/files/langsec-bcc.pdf">SLIDES</a>]
-					</td>
-				</tr>
-				<tr>
-					<td>
-						<img src="emojis/fax.svg" class="icon"/>
-					</td>
-					<td>
-						11/15/20: <u>What Decentralization Is And Isn't</u>, <a href="https://paul.lol/">Paul Miller</a>
-						[<a href="https://decentralized.vercel.app/#0">SLIDES</a>]
-					</td>
-				</tr>
-				<tr>
-					<td>
-						<img src="emojis/bow.svg" class="icon"/>
-					</td>
-					<td>
-						11/01/20: <a href="https://www.math3ma.com/blog/the-yoneda-lemma">The Yoneda Lemma</a>, <a href="https://mathoverflow.net/users/31420/tyler-bryson">Tyler Bryson</a>
-						[<a href="artifacts/tylerBryson/yoneda_lemma.pdf">SLIDES</a>]
-						[<a href="https://mitpress.mit.edu/books/topology">BOOK</a>]
-					</td>
-				</tr>
-				<tr>
-					<td>
-						<img src="emojis/clamp.svg" class="icon"/>
-					</td>
-					<td>
-						10/17/20: <a href="https://arxiv.org/abs/1906.00299">Overfitting Management in ML Applications</a>, <a href="http://www.franceshubis.org/about/">Frances Hubis</a>
-					</td>
-				</tr>
-				<tr>
-					<td>
-						<img src="emojis/planet.svg" class="icon"/>
-					</td>
-					<td>
-						10/03/20: <a href="https://ui.adsabs.harvard.edu/abs/2019ESS.....432502V/abstract">Testing the Paradigm of Asteroidal Dust around White Dwarfs</a>, <a href="https://faculty.erau.edu/Ted.VonHippel">Ted von Hippel</a>
-					</td>
-				<tr>
-				<tr>
-					<td>
-						<img src="emojis/web.svg" class="icon"/>
-					</td>
-					<td>
-						09/20/20: <u>Implications of Collaborative Filtering</u>, <a href="https://github.com/Denbox">Jacob Denbeaux</a>
-					</td>
-				</tr>
-				<tr>
-					<td>
-						<img src="emojis/brain.svg" class="icon"/>
-					</td>
-					<td>
-						09/06/20: <a href="https://paperswithcode.com/paper/graph-representations-for-higher-order-logic">Graph Representations for Higher Order Logic</a>, <a href="https://stites.io/">Sam Stites</a>
-					</td>
-				</tr>
-				<tr>
-					<td>
-						<img src="emojis/balance.svg" class="icon"/>
-					</td>
-					<td>
-						08/16/20: <a href="https://link.springer.com/chapter/10.1007/978-3-642-21070-9_22">Programming from Galois Connections</a>, <a href="https://mxvh.pl">Max von Hippel</a>
-						[<a href="artifacts/maxvonHippel/galois.pdf">NOTES</a> full of typos]
-					</td>
-				</tr>
-			</table>
+        <br>
+        <h5>To join the Slack & attend future talks, or <span style="color:blue">if you would like to give a
+                talk</span>, email vonhippel [ dot ] m [ at ] northeastern [ dot ] edu, or tweet <a
+                href="https://twitter.com/maxvonhippel">@maxvonhippel</a>. You can find us on <a
+                href="https://www.youtube.com/channel/UCdQKL8IGTVagOPWE_cjj0TA">YouTube</a>, <a
+                href="https://anchor.fm/bostoncc">Anchor</a>, and <a href="https://bstn.substack.com/">Substack</a>.
+        </h5>
 
-			<h3>Future Meetings</h3>
-			<ul>
-				<li><span>[10/07/23, <u>Artificial Intelligence, Openness, and "Existential" Risk: Well Informed Vibes on What is Hype and What is Real</u>] <a href="https://evijit.io/">Avijit Ghosh</a>, <a href="https://davidwidder.me/">David Widder</a>, and <a href="https://ftollon.wordpress.com/">Fabio Tollon</a>, moderated by <a href="http://weiright.blogspot.com/2022/06/movie-review-everything-everywhere-all.html">Wei Sun</a>.</span></li>
-				<li><span>[10/21/23, <a href="https://arxiv.org/abs/2109.11967">How to Write a Coequation</a>]</span> <a href="https://toddtoddtodd.net/">Todd Schmid</a>.</li>
-				<!-- Use emojis/police.svg -->
-				<!-- Use emojis/broom.svg -->
-				<li><span>[11/04/23, <a href="https://twitter.com/c0b1w2/status/1653580936368504837?s=20">Logic in Color</a>] <a href="https://math.ucr.edu/~williams/">Christian Williams</a>.</li>
-			</ul>
+        <h3>Next Meeting: September 17, 2023 at 5PM EST</h3>
+        <table>
+            <tr>
+                <td>
+                    <img src="emojis/dice.svg" class="icon" />
+                <td>
+                    <u>Open Problems in Probabilistic Programming Semantics</u>, <a
+                        href="https://esennesh.github.io/">Eli Sennesh</a>
+                </td>
+            </tr>
+        </table>
 
-			<h4>Other Venues</h4>
-			<p>
-				We're not the only rodeo in town.
-				If you like us, be sure to check out
-				the <a href="https://www.bu.edu/cs/research/popv/seminar/">BU POPV Seminar</a> (organized by our very own <a href="https://czhang03.github.io/">Cheng Zhang</a>),
-				<a href="https://topos.site/intercats/">Intercats</a> (from the
-				<a href="https://topos.site/">Topos Institute</a>),
-				<a href="https://sites.google.com/southalabama.edu/tmwyf/home">TMWYF</a>,
-				the <a href="https://www.cl.cam.ac.uk/events/owls/">Online Worldwide Seminar on Logic and Semantics</a>,
-				<a href="https://london.computation.club/">London Computation Club</a>,
-				<a href="https://chaitinschool.org/">Chaitin School of Engineering</a>,
-				<a href="https://iiitbtheoryclub.github.io/">IIT Bangalore Theory Club</a>,
-				<a href="https://offbeat.cc/">Offbeat Computation Club</a>,
-				<a href="http://css.csail.mit.edu/security-seminar/">MIT CSAIL Security Seminar</a>,
-				<a href="http://brendanfong.com/seminar.html">MIT Categories Seminar</a>,
-				<a href="https://ml-logic-seminar.github.io/">Waterloo ML+Logic Colloquium</a>,
-				<a href="http://prl.ccs.neu.edu/seminars.html">Northeastern PL Seminar</a>,
-				<a href="https://chaitinschool.org/events/upcoming/?s=CivicTech">CiviTech</a>,
-				and
-				always-wonderful <a href="https://topology.sites.northeastern.edu/">Northeastern Topology Seminar</a>.
-				If you like podcasts, we highly reccomend
-					<a href="https://www.raincodelabs.com/wespeakyourlanguage/">We Speak Your Language</a>,
-					<a href="https://homepage.divms.uiowa.edu/~astump/ittc.html">The Iowa Type Theory Commute</a>, and
-					<a href="https://kpknudson.com/my-favorite-theorem">My Favorite Theorem</a>.
-				If you'd like your venue to be listed here as well, shoot Max an email.
-			</p>
-			</div>
+        <h3>Prior Meetings</h3>
+        <table>
+            <tr>
+                <td>
+                    <img src="emojis/noteboard.svg" class="icon" />
+                <td>
+                    09/09/23: <a href="https://philarchive.org/rec/DALTAF-2">Transferable and Fixable Proofs</a>, <a
+                        href="https://philarchive.org/rec/DALTAF-2">Bill Dalessandro</a>
+                    [<a href="https://youtu.be/Ocs6w8L37cI">VIDEO</a>]
+                    [<a href="https://castro.fm/episode/P4gNR6">AUDIO</a>]
+                    [<a href="artifacts/billDalessandro/rav.pdf">RELATED PAPER</a>]
+                    [<a href="artifacts/billDalessandro/slides.pptx">SLIDES</a>]
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="emojis/chip.svg" class="icon" />
+                <td>
+                    09/01/23: <a href="https://github.com/chipsec/chipsec">The ChipSec Project</a>, <a
+                        href="https://twitter.com/Lukiahas">Nathaniel Mitchell</a> and Dan Scott
+                    [<a href="https://youtu.be/MJUv2QHORCc">VIDEO</a>]
+                    [<a href="https://castro.fm/episode/h31FF2">AUDIO</a>]
+                    [<a href="artifacts/chipsec/chipsec.pptx">SLIDES</a>]
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="emojis/rainbow.svg" class="icon" />
+                <td>
+                    08/12/23: <a href="https://arxiv.org/pdf/2301.09757.pdf">Packing Chromatic</a>, <a
+                        href="https://bsubercaseaux.github.io/">Bernardo Anibal Subercaseaux Roa</a>
+                    [<a href="https://youtu.be/ZJ5EMGxRXpQ">VIDEO</a>]
+                    [<a href="https://castro.fm/episode/C6o3iB">AUDIO</a>]
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="emojis/surf.svg" class="icon" />
+                <td>
+                    07/15/23: <a href="https://arxiv.org/abs/2210.17216">Symmetries, Flat Minima, and the Conserved
+                        Quantities of Gradient Flow</a>, <a href="https://b-zhao.github.io/">Bo Zhao</a>
+                    [<a href="https://youtu.be/6tgJLV06MfE">VIDEO</a>]
+                    [<a href="https://castro.fm/episode/CnsebH">AUDIO</a>]
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="emojis/wand.svg" class="icon" />
+                <td>
+                    06/30/23: <a href="https://app.algovera.ai/">ChatGPT on your Personal Corpus in Algovera</a>, <a
+                        href="https://twitter.com/richardblythman">Richard Blythman</a>
+                    [<a href="https://youtu.be/F7i_jb11MGY">VIDEO</a>]
+                    [<a href="https://castro.fm/episode/1aw4VU">AUDIO</a>]
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="emojis/kernel.svg" class="icon" />
+                <td>
+                    06/25/23: <a href="https://dl.acm.org/doi/abs/10.1145/3552326.3587458">Unikernel Linux (UKL)</a>, <a
+                        href="https://www.bu.edu/cs/profiles/thomas-unger/">Thomas Unger</a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="emojis/coral.svg" class="icon" />
+                <td>
+                    06/23/23: <a href="https://arxiv.org/abs/2202.02365">MariusGNN</a>, <a
+                        href="http://www.rogerwaleffe.com/">Roger Waleffe</a>
+                    [<a href="https://youtu.be/7Fw9NlIWsDc">VIDEO</a>]
+                    [<a href="https://castro.fm/episode/mT1Gwa">AUDIO</a>]
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="emojis/card.svg" class="icon" />
+                <td>
+                    06/16/23: <u>Infinite Games -- Strategies, Logic, Theory, and Computation</u>, <a
+                        href="http://jdh.hamkins.org/">Joel David Hamkins</a>
+                    [<a href="https://youtu.be/W3X8zRofRpU">VIDEO</a>]
+                    [<a href="https://castro.fm/episode/CHEa3e">AUDIO</a>]
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="emojis/art.svg" class="icon" />
+                <td>
+                    06/10/23: <u>Math is Not Relevant</u>, <a
+                        href="http://weiright.blogspot.com/2022/06/movie-review-everything-everywhere-all.html">Wei
+                        Sun</a>
+                    [<a href="https://youtu.be/7idnCIxNGSo">VIDEO</a>]
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="emojis/ballot.svg" class="icon" />
+                <td>
+                    05/20/23: <a href="https://dcic-world.org/">A Data-Centric Introduction to Computing</a>, <a
+                        href="https://cs.brown.edu/~sk/">Shriram Krishnamurthi</a>
+                    [<a href="https://youtu.be/HwPM0xMdiNU">VIDEO</a>]
+                    [<a href="https://castro.fm/episode/hTF9oj">AUDIO</a>]
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="emojis/lungs.svg" class="icon" />
+                <td>
+                    05/13/23: <u>Automation of Medical Form Processing in the Context of Organ Transplantation</u>, <a
+                        href="https://www.math.arizona.edu/people/rychlik">Marek Rychlik</a> and <a
+                        href="https://deptmedicine.arizona.edu/profile/bekir-tanriover-md-mph-mba-fast">Beaker
+                        Tanriover</a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="emojis/baseball.svg" class="icon" />
+                <td>
+                    04/29/23: <u>Q&A on the Philosophy of Games</u>, <a
+                        href="https://www.amazon.com/Games-Agency-As-Art-Thinking/dp/0190052082">Christopher Ba Thi
+                        Nguyen</a> in conversation with <a
+                        href="http://weiright.blogspot.com/2022/06/movie-review-everything-everywhere-all.html">Wei
+                        Sun</a>
+                    [<a href="https://youtu.be/wD3OnIbyENE">VIDEO</a>]
+                    [<a href="https://spotifyanchor-web.app.link/e/Ev6rtC06ozb">AUDIO</a>]
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="emojis/ear.svg" class="icon" />
+                <td>
+                    04/21/23: <u>Quantity Calculus in Natural Language Semantics</u>, <a
+                        href="https://ling.bu.edu/people/coppock/">Elizabeth Coppock</a>
+                    [<a href="https://youtu.be/0mTZ541kTGQ">VIDEO</a>]
+                    [<a href="https://castro.fm/episode/jrKS5p">AUDIO</a>]
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="emojis/world-map.svg" class="icon" />
+                <td>
+                    04/02/23: <u>Path Finding with <a
+                            href="https://insights.sei.cmu.edu/blog/ghihorn-path-analysis-in-ghidra-using-smt-solvers/">Ghihorn</a></u>,
+                    <a href="https://resources.sei.cmu.edu/library/author.cfm?authorid=3415">Jeffrey Gennari</a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="emojis/pie.svg" class="icon" />
+                <td>
+                    03/17/23: <u>The Process, Challenges, Struggles & Joys of Creating "How to Design Programs"</u>, <a
+                        href="https://felleisen.org/matthias/">Matthias Felleisen</a>
+                    [<a href="https://youtu.be/ODOI-qbvkwE">VIDEO</a>]
+                    [<a href="https://castro.fm/episode/VSfBNa">AUDIO</a>]
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="emojis/ticket.svg" class="icon" />
+                <td>
+                    03/03/23: <a href="https://eta.st/2023/01/31/rail-tickets.html">Reverse Engineering UK Mobile Rail
+                        Tickets</a>, <a href="https://eta.st">eta</a>
+                    [<a href="https://www.youtube.com/watch?v=X6StEcZWZkU">VIDEO</a>]
+                    [<a href="https://castro.fm/episode/rLgnOK">AUDIO</a>]
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="emojis/orangutan.svg" class="icon" />
+                <td>
+                    02/12/23: <a href="https://web3isgoinggreat.com/">Web3 is Going Just Great</a>, <a
+                        href="https://www.mollywhite.net/">Molly White</a>
+                    [<a href="https://youtu.be/DQxNYFae3cU">VIDEO</a>]
+                    [<a href="https://castro.fm/episode/VZeWCq">AUDIO</a>]
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="emojis/tablet.svg" class="icon" />
+                <td>
+                    02/03/23: <u>How to Give a Good Mathematical Presentation</u>, <a
+                        href="http://www.math.ryerson.ca/~abonato/">Anthony Bonato</a>
+                    [<a href="https://youtu.be/ZmLoQDWEZgg">VIDEO</a>]
+                    [<a href="https://castro.fm/episode/NzEZlQ">AUDIO</a>]
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="emojis/geiger.svg" class="icon" />
+                <td>
+                    01/28/23: <u>Implications of Model-Based Phil/Sci for ML</u>, <a href="http://mel-andrews.com/">Mel
+                        Andrews</a>
+                    [<a href="https://castro.fm/episode/ZKljcy">AUDIO</a>]
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="emojis/shush.svg" class="icon" />
+                <td>
+                    01/15/23: <a href="https://www.tryquiet.org/">Quiet: a Web3 Alternative to Discord</a>, <a
+                        href="https://twitter.com/holmesworcester">Holmes Wilson</a>
+                    [<a href="https://youtu.be/jwJLd3Qc9TI">VIDEO</a>]
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="emojis/unlocked.svg" class="icon" />
+                <td>
+                    01/06/23: <u>Q&A: AppSec from OWASP to Present</u>, <a href="http://www.viega.org/">John Viega</a>
+                    [<a href="https://castro.fm/episode/sF7wfa">AUDIO</a>]
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="emojis/car.svg" class="icon" />
+                <td>
+                    12/10/22: <u>Challenges Encountered Building Slow Roads</u>, <a
+                        href="https://twitter.com/anslogen">Anslo</a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="emojis/hole.svg" class="icon" />
+                <td>
+                    12/03/22: <a href="https://en.wikipedia.org/wiki/Depths_of_Wikipedia">Depths of Wikipedia</a>, <a
+                        href="https://twitter.com/anniierau">Annie Rauwerda</a>
+                    [<a href="https://youtu.be/nxgiId6JXYk">VIDEO</a>]
+                    [<a href="https://castro.fm/episode/8OXzq0">AUDIO</a>]
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="emojis/move.svg" class="icon" />
+                <td>
+                    11/19/22: <a href="https://eprint.iacr.org/2022/842">Nearly Optimal Property Preserving Hashing</a>,
+                    <a href="https://www.khoury.northeastern.edu/home/lakyahtyner/index.html">LaKyah Tyner</a>
+                    [<a href="https://youtu.be/oDz2QerJtJM">VIDEO</a>]
+                    [<a href="https://castro.fm/episode/7n2eXG">AUDIO</a>]
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="emojis/8.svg" class="icon" />
+                <td>
+                    11/06/22: <u>Intro to Zero Knowledge Proofs</u>, <a
+                        href="https://cs-people.bu.edu/kaptchuk/">Gabriel Kaptchuk</a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="emojis/whoami.svg" class="icon" />
+                <td>
+                    10/23/22: <u>Formal Analysis of Ethereum's GossipSub in ACL2s</u>, <a
+                        href="https://ankitku.github.io/">Ankit Kumar</a> and <a href="https://mxvh.pl">Max von
+                        Hippel</a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="emojis/amulet.svg" class="icon" />
+                <td>
+                    10/14/22: <u>Cryptography with Quantum States</u>, <a
+                        href="https://www.cs.utexas.edu/~kretsch/">William Kretschmer</a>
+                    [<a href="https://castro.fm/episode/1IUSHX">AUDIO</a>]
+                    [<a href="https://youtu.be/Ee_zt6AfMEM">VIDEO</a>]
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="emojis/numbers.svg" class="icon" />
+                <td>
+                    10/08/22: <u>Mock Theta Functions</u>, <a
+                        href="https://www.amherst.edu/people/facstaff/afolsom">Amanda Folsom</a>.
+                    [ALSO:
+                    <a href="https://afolsom.people.amherst.edu/Folsom_Notices_2019.pdf">1</a>,
+                    <a href="https://afolsom.people.amherst.edu/Folsom-NoticesWhatIsDec.pdf">2</a>,
+                    <a href="https://afolsom.people.amherst.edu/JNT_Perspectives_Folsom_publ.pdf">3</a>,
+                    <a href="https://m.youtube.com/watch?v=sobBCL4ImKs">4</a>,
+                    <a href="https://people.math.sc.edu/thornef/dartmouth.pdf">5</a>]
+                </td>
+            </tr>
+            <tr style="background-color:LightGray;">
+                <td>
+                    <img src="emojis/cafe.svg" class="icon" />
+                <td>
+                    09/17/22: <u>Math Café #11: Prep for Dr. Folsom's Talk</u>, <a
+                        href="https://www.horizonquantum.com/team-members/ammar-husain">Ammar Husain</a>.
+                    [<a href="artifacts/ammarHussein/Modular_Form_Background.pdf">SLIDES</a>]
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="emojis/torch.svg" class="icon" />
+                <td>
+                    09/16/22: <u>A Conversation on Theorem Provers and Vulnerability Research</u>, <a
+                        href="https://addisoncrump.info/">Addison Crump</a> and <a href="https://heinen.dev">Teddy
+                        Heinen</a>
+                </td>
+            </tr>
+            <tr style="background-color:LightGray;">
+                <td>
+                    <img src="emojis/cafe.svg" class="icon" />
+                <td>
+                    09/15/22: <a href="https://bstn.cc/math">Math Café #10: Infinite Dimensional Analysis
+                        (Semi-Continuity)</a>, <a href="https://cs-people.bu.edu/czhang03/">Cheng Zhang</a>
+                </td>
+            </tr>
+            <tr style="background-color:LightGray;">
+                <td>
+                    <img src="emojis/cafe.svg" class="icon" />
+                <td>
+                    09/04/22: <a href="https://bstn.cc/math">Math Café #9: Infinite Dimensional Analysis (Continuity &
+                        Compactness)</a>, <a href="https://cs-people.bu.edu/czhang03/">Cheng Zhang</a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="emojis/xray.svg" class="icon" />
+                <td>
+                    09/03/22: <u>A Conversation on Reverse Engineering Tooling</u>, <a
+                        href="https://twitter.com/ztehryan">Matteo Giordiano</a>
+                </td>
+            </tr>
+            <tr style="background-color:LightGray;">
+                <td>
+                    <img src="emojis/cafe.svg" class="icon" />
+                <td>
+                    08/27/22: <u>Blockchain Café #2: Applied Cryptography and APIs</u>, <a
+                        href="https://brennonbrimhall.github.io/about/">Brennon Brimhall</a>
+                </td>
+            </tr>
+            <tr style="background-color:LightGray;">
+                <td>
+                    <img src="emojis/cafe.svg" class="icon" />
+                <td>
+                    08/07/22: <a href="https://bstn.cc/math">Math Café #8: Infinite Dimensional Analysis
+                        (Continuity)</a>, <a href="https://cs-people.bu.edu/czhang03/">Cheng Zhang</a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="emojis/cellular.svg" class="icon" />
+                <td>
+                    08/05/22: <a
+                        href="https://blog.adaptivemobile.com/the-mobile-network-battlefield-in-ukraine-part-1">The
+                        Mobile Network Battlefield in Ukraine</a>, <a href="https://twitter.com/mcdaidc">Cathal
+                        McDaid</a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="emojis/nuclear-man.svg" class="icon" />
+                <td>
+                    07/29/22: <u>A Conversation on Reverse Engineering and Symbolic Execution</u>, <a
+                        href="https://github.com/Boyan-MILANOV">Boyan Milanov</a>
+                </td>
+                </td>
+            <tr style="background-color:LightGray;">
+                <td>
+                    <img src="emojis/cafe.svg" class="icon" />
+                </td>
+                <td>
+                    07/17/22: <a href="https://bstn.cc/math">Math Café #7: Infinite Dimensional Analysis (Filters)</a>,
+                    <a href="https://cs-people.bu.edu/czhang03/">Cheng Zhang</a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="emojis/crypto.svg" class="icon" />
+                </td>
+                <td>
+                    07/16/22: <u>The Crypto Crash(es)</u>, <a
+                        href="https://www.linkedin.com/in/cristiano-fortuna-couto-teixeira">Cristiano Teixeira</a>
+                </td>
+            </tr>
+            <tr style="background-color:LightGray;">
+                <td>
+                    <img src="emojis/cafe.svg" class="icon" />
+                </td>
+                <td>
+                    07/10/22: <a href="https://bstn.cc/math">Math Café #6: Infinite Dimensional Analysis (Topologies &
+                        Nets)</a>, <a href="https://cs-people.bu.edu/czhang03/">Cheng Zhang</a>
+                    [<a href="artifacts/mathCafes/nets.txt">NOTES</a>]
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="emojis/recycle.svg" class="icon" />
+                </td>
+                <td>
+                    06/19/22: <a href="https://onlinelibrary.wiley.com/doi/full/10.1111/jiec.13239">Assessing Recycling,
+                        Displacement, and Environmental Impacts using an Economics-Informed Material System Model</a>,
+                    <a href="https://twitter.com/ryterjohn?lang=en">John Ryter</a>
+                    [<a href="https://castro.fm/episode/cMaaM4">AUDIO</a>]
+                    [<a href="https://youtu.be/pXqaL9NP6cw">VIDEO</a>]
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="emojis/moving.money.svg" class="icon" />
+                </td>
+                <td>
+                    06/11/22: <u>An Open Discussion on Unionizing Graduate Students</u>, <a
+                        href="https://twitter.com/JacobM_AL?s=20">Jacob Morrison</a> and <a
+                        href="https://uaw.org/">Jeremy Stepansky</a>
+                </td>
+            </tr>
+            <tr style="background-color:LightGray;">
+                <td>
+                    <img src="emojis/cafe.svg" class="icon" />
+                </td>
+                <td>
+                    06/05/22: <a href="https://bstn.cc/math">Math Café #5: The Collatz Conjecture</a>, <a
+                        href="https://mxvh.pl">Max von Hippel</a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="emojis/tracks.svg" class="icon" />
+                </td>
+                <td>
+                    05/28/22: <a href="https://arxiv.org/abs/2111.00396">Efficiently Modeling Long Sequences with
+                        Structured State Spaces</a>, <a href="http://web.stanford.edu/~albertgu/">Albert Gu</a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="emojis/thermometer.svg" class="icon" />
+                </td>
+                <td>
+                    05/20/22: <u>Hybrid Systems: Not Just For Cars Anymore!</u>, <a
+                        href="https://sites.google.com/site/kimayersmath/home">Kimberly Ayers</a>
+                    [<a href="https://castro.fm/episode/FMA6fd">AUDIO</a>]
+                    [<a href="https://youtu.be/AC1Ji7aEVVM">VIDEO</a>]
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="emojis/star.svg" class="icon" />
+                </td>
+                <td>
+                    05/13/22: <a href="https://hal.archives-ouvertes.fr/hal-00019978/document">The Generalized Star
+                        Height Problem</a>, <a href="https://www.irif.fr/~jep/">Jean-Eric Pin</a>
+                    [<a href="https://youtu.be/Fe_iMIOU8MQ">VIDEO</a>]
+                    [<a href="https://castro.fm/episode/yjtbiO">AUDIO</a>]
+                </td>
+            </tr>
+            <tr style="background-color:LightGray;">
+                <td>
+                    <img src="emojis/cafe.svg" class="icon" />
+                </td>
+                <td>
+                    05/08/22: <a href="https://bstn.cc/math">Math Café #4: Selected Topics in Kleene Algebra</a>, <a
+                        href="https://cs-people.bu.edu/czhang03/">Cheng Zhang</a>
+                </td>
+            </tr>
+            <tr style="background-color:LightGray;">
+                <td>
+                    <img src="emojis/cafe.svg" class="icon" />
+                </td>
+                <td>
+                    05/07/22: <a href="https://bstn.cc/math">Math Café #3: Prep for Dr. Pin's Talk</a>, <a
+                        href="https://mxvh.pl">Max von Hippel</a> [<a href="artifacts/jeanEricPin/prep.pdf">NOTES</a>]
+                    [<a href="artifacts/maxvonHippel/pin-prep.pdf">SLIDES</a>] [<a
+                        href="https://youtu.be/TBfP08BdFlU">VIDEO</a>] [<a
+                        href="https://castro.fm/episode/Icol2a">AUDIO</a>]
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="emojis/snitch.svg" class="icon" />
+                </td>
+                <td>
+                    04/15/22: <a href="https://arxiv.org/abs/2003.05503">When Memory Guards are Crooked and Become
+                        Speculating Snitches</a>, <a href="https://mbr.sh/">Andrea Mambretti</a>
+                    [<a href="https://youtu.be/oPfHL9IDeNQ">VIDEO</a>]
+                    [<a href="https://castro.fm/episode/jnbmiA">AUDIO</a>]
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="emojis/worm.svg" class="icon" />
+                </td>
+                <td>
+                    03/20/22: <u>An Open Conversation on Web3</u>, <a href="https://dune.foundation/">Spice DAO</a>
+                    [<a href="https://youtu.be/eoNOI3Ox_CM">VIDEO</a>]
+                    [<a href="https://castro.fm/episode/u1KGhN">AUDIO</a>]
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="emojis/cheese.svg" class="icon" />
+                </td>
+                <td>
+                    03/13/22: <a href="https://arxiv.org/abs/2202.09470">Automated Attack Synthesis by Extracting Finite
+                        State Machines from Protocol Specification Documents</a>, <a
+                        href="https://mlpacheco.github.io/">Maria Leonor Pacheco</a> and <a href="https://mxvh.pl/">Max
+                        von Hippel</a>
+                    [<a href="https://github.com/RFCNLP">CODE</a>]
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="emojis/yellow.svg" class="icon" />
+                </td>
+                <td>
+                    03/12/22: <u>Live Coding: Making a Wordle Scraper and Solver</u>, <a
+                        href="https://github.com/Denbox">Jacob Denbeaux</a>
+                    [<a href="https://github.com/bstncc/wordle_comcom">CODE</a>]
+                    [<a href="https://youtu.be/6l1Mabr0IGQ">VIDEO</a>]
+                    [<a href="https://castro.fm/episode/7kVAEe">AUDIO</a>]
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="emojis/sunflower.svg" class="icon" />
+                </td>
+                <td>
+                    03/09/22: <u>Q&A Regarding the War in Ukraine</u>, <a
+                        href="https://rusi.org/people/von-hippel">Karin von Hippel</a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="emojis/saw.svg" class="icon" />
+                </td>
+                <td>
+                    03/05/22: <u>Seize the Means of Computation: the Big Tech Disassembly Manual</u>, <a
+                        href="https://craphound.com/">Cory Doctorow</a>
+                    [<a href="https://youtu.be/QzzIftKz600">VIDEO</a>]
+                    [<a href="https://castro.fm/episode/cBq9TF">AUDIO</a>]
+                </td>
+            </tr>
+            <tr style="background-color:LightBlue;">
+                <td>
+                    <img src="emojis/homework.svg" class="icon" />
+                </td>
+                <td>
+                    03/04/22: <a href="https://bstn.cc/math">Topology Homework Session #5</a>: <a
+                        href="https://www.cs.cornell.edu/fbs/publications/DefLiveness.pdf">Liveness & Safety
+                        Properties</a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="emojis/mirror.svg" class="icon" />
+                </td>
+                <td>
+                    02/17/22: <a href="https://arxiv.org/abs/1403.5752">Quantum Computing in Plato's Cave</a>, <a
+                        href="https://researchers.mq.edu.au/en/persons/daniel-burgarth">Daniel Burgarth</a>
+                    [<a href="https://youtu.be/Mmda7iOniIU">VIDEO</a>]
+                    [<a href="https://castro.fm/episode/AIK95k">AUDIO</a>]
+                </td>
+            </tr>
+            <tr style="background-color:LightGray;">
+                <td>
+                    <img src="emojis/cafe.svg" class="icon" />
+                </td>
+                <td>
+                    02/11/22: <a href="https://bstn.cc/math">Math Café #2</a>, lead by <a href="https://stites.io/">Sam
+                        Stites</a>
+                </td>
+            </tr>
+            <tr style="background-color:LightBlue;">
+                <td>
+                    <img src="emojis/homework.svg" class="icon" />
+                </td>
+                <td>
+                    02/10/22: <a href="https://bstn.cc/math">Topology Homework Session #4: Homotopy Equivalence</a>
+                </td>
+            </tr>
+            <tr style="background-color:LightBlue;">
+                <td>
+                    <img src="emojis/homework.svg" class="icon" />
+                </td>
+                <td>
+                    02/09/22: <a href="https://bstn.cc/math">Topology Homework Session #3: Continuity & Nullhomotopy</a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="emojis/horse.svg" class="icon" />
+                </td>
+                <td>
+                    02/06/22: <a href="https://www.trojansource.codes/">Trojan Source Attacks</a>, <a
+                        href="https://www.cl.cam.ac.uk/~ndb40/">Nicholas Boucher</a>
+                    [<a href="https://youtu.be/3Z0oB4gz8nA">VIDEO</a>]
+                    [<a href="https://castro.fm/episode/ppF8ye">AUDIO</a>]
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="emojis/handshake.svg" class="icon" />
+                </td>
+                <td>
+                    01/22/22: <u>How to Meet Interesting People by Accident & Design</u>, <a
+                        href="https://randomstring.org/~dsr/">Dan Ritter</a>
+                </td>
+            </tr>
+            <tr style="background-color:LightGray;">
+                <td>
+                    <img src="emojis/cafe.svg" class="icon" />
+                </td>
+                <td>
+                    01/20/22: <a href="https://bstn.cc/math">Math Café #1</a>, lead by <a href="https://stites.io/">Sam
+                        Stites</a>
+                </td>
+            </tr>
+            <tr style="background-color:LightBlue;">
+                <td>
+                    <img src="emojis/homework.svg" class="icon" />
+                </td>
+                <td>
+                    01/14/22: <a href="https://bstn.cc/math">Topology Homework Session #2: The Quotient Topology</a>
+                </td>
+            </tr>
+            <tr style="background-color:LightBlue;">
+                <td>
+                    <img src="emojis/homework.svg" class="icon" />
+                </td>
+                <td>
+                    01/13/22: <a href="https://bstn.cc/math">Topology Homework Session #1: The Zariski Topology over
+                        spec R</a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="emojis/c2.svg" class="icon" />
+                </td>
+                <td>
+                    01/08/22: <u>Covert C2 Channels</u>, <a href="https://www.youtube.com/watch?v=j2hGdmnoHU0">Kai
+                        Bernardini</a>
+                    [<a href="https://youtu.be/OWHfoI27q_0">VIDEO</a>]
+                    [<a
+                        href="https://anchor.fm/bostoncc/episodes/010822-Covert-C2-Channels-with-Kai-Bernardini-e1cml7l">AUDIO</a>]
+                    [<a href="https://github.com/kbsec">GITHUB</a>]
+                    [<a href="https://twitter.com/KB_Intel">TWITTER</a>]
+                </td>
+            </tr>
+            <tr style="background-color:LightGray;">
+                <td>
+                    <img src="emojis/cafe.svg" class="icon" />
+                </td>
+                <td>
+                    12/15/21: <u>Blockchain Café #1: Formal Methods for Smart Contracts</u>
+                    [<a href="https://www.usenix.org/system/files/sec21-so.pdf">PAPER</a>]
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="emojis/ruler.svg" class="icon" />
+                </td>
+                <td>
+                    12/04/21: <u>Feynman Integrals for a Mathematical Audience</u>, <a
+                        href="https://4gravitons.com/">Matt von Hippel</a>
+                    [<a href="https://youtu.be/6ckQnt5IvYQ">VIDEO</a>]
+                    [<a href="https://castro.fm/episode/pIayPg">AUDIO</a>]
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="emojis/dna.svg" class="icon" />
+                </td>
+                <td>
+                    12/03/21: <u>Aesthetic and Organic Complexity</u>, <a href="https://tylerxhobbs.com">Tyler Hobbs</a>
+                    and <a href="https://wcresko.github.io/lab_website/">Bill Cresco</a>, moderated by Joe and <a
+                        href="https://www.reedhilderbrand.com/people/anya_sheldon">Anya</a>
+                    [<a href="https://youtu.be/1W6_NM92P5g">VIDEO</a>]
+                    [<a href="https://castro.fm/episode/B4v9Er">AUDIO</a>]
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="emojis/judge.svg" class="icon" />
+                </td>
+                <td>
+                    10/29/21: <u>It's Just Math and Other Lies We Tell Ourselves</u>, <a
+                        href="https://sites.google.com/view/jadeedenstarmaster/home">Jade Edenstar Master</a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="emojis/tree.svg" class="icon" />
+                </td>
+                <td>
+                    10/24/21: <a href="https://arxiv.org/abs/2108.10061">An Extensible and Modular Design and
+                        Implementation of Monte Carlo Tree Search for the JVM</a>, <a
+                        href="https://larkz.github.io/">Larkin Liu</a> and (in attendance) <a
+                        href="https://www.linkedin.com/in/jun-tao-luo">Jun Tao Luo</a>
+                    [<a href="https://youtu.be/bVpUlJU-piA">VIDEO</a>]
+                    [<a href="https://castro.fm/episode/u3MH6b">AUDIO</a>]
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="emojis/string.svg" class="icon" />
+                </td>
+                <td>
+                    10/15/21: <a href="https://fmcad.org/FMCAD21/accepted/">Mathematical Programming Modulo Strings</a>,
+                    <a href="https://ankitku.github.io/">Ankit Kumar</a>
+                    [<a href="https://youtu.be/doeauZv3JrE">VIDEO</a>]
+                    [<a href="https://castro.fm/episode/335ris">AUDIO</a>]
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="emojis/julia.svg" class="icon" />
+                </td>
+                <td>
+                    10/09/21: <u>Types in PL Research vs Types in Julia</u>, <a href="https://julbinb.github.io/">Julia
+                        Belyakova</a>
+                    [<a href="https://youtu.be/JNxrX2XvZIY">VIDEO</a>]
+                    [<a href="https://castro.fm/episode/YHB3so">AUDIO</a>]
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="emojis/moving.money.svg" class="icon" />
+                </td>
+                <td>
+                    09/25/21: <u>Labor and Unions</u>, <a href="https://twitter.com/JacobM_AL?s=20">Jacob Morrison</a>
+                    and Adam Keller
+                    [<a href="http://www.nugradunion.com/">NU Grad Union</a>]
+                    [ALSO:
+                    <a href="https://www.massnurses.org/">1</a>,
+                    <a href="https://labornotes.org/strikes">2</a>,
+                    <a href="https://labornotes.org/beatingapathy">3</a>,
+                    <a href="https://iww.org/resources/">4</a>,
+                    <a href="https://twitter.com/LaborReporters/status/1430985595954864133?s=20">5</a>,
+                    <a href="https://inthesetimes.com/">6</a>,
+                    <a href="https://www.thestrikewave.com/original-content">7</a>,
+                    <a href="https://workingpeople.libsyn.com/">8</a>,
+                    <a
+                        href="https://open.spotify.com/episode/33aQTLj1QsnVovKah4MX96?si=mYCFqH-4RFCaZJfmXtQVXg&utm_source=copy-link&dl_branch=1">9</a>,
+                    <a
+                        href="https://open.spotify.com/episode/1aLZNro2l5Uz4YOhqJFPfW?si=2uCwuLqGTzWdSAyELBII6w&utm_source=copy-link&dl_branch=1">10</a>
+                    ]
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="emojis/knife.svg" class="icon" />
+                </td>
+                <td>
+                    09/18/21: <a href="https://pwn.college/">Live <strike>Coding</strike> Hacking</a>, <a
+                        href="https://mxvh.pl/">Max von Hippel</a> (pilot) and <a href="https://github.com/Denbox">Jacob
+                        Denbeaux</a> (copilot)
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="emojis/lion.svg" class="icon" />
+                </td>
+                <td>
+                    09/12/21: <u>More Category Theory for More Cybernetics</u>, <a
+                        href="https://matteocapucci.wordpress.com/">Matteo Capucci</a>
+                    [<a href="https://youtu.be/4K3FHVqlBb8">VIDEO</a>]
+                    [<a href="https://castro.fm/episode/YnUCAk">AUDIO</a>]
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="emojis/analog.svg" class="icon" />
+                </td>
+                <td>
+                    08/28/21: <u>Compilation Techniques for Reconfigurable Analog Devices</u>, <a
+                        href="http://people.csail.mit.edu/sachour/">Sara Achour</a>
+                    [<a href="https://youtu.be/HrBNXSJjwYc">VIDEO</a>]
+                    [<a href="https://castro.fm/episode/4lUknY">AUDIO</a>]
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="emojis/puzzle.svg" class="icon" />
+                </td>
+                <td>
+                    08/20/21: <u>An Open Question in Category Theory</u>, <a
+                        href="https://cos.northeastern.edu/people/alex-martsinkovsky/">Alex Martsinkovsky</a>
+                    [<a href="artifacts/alexMartsinkovsky/notes.pdf">NOTES</a>]
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="emojis/database.svg" class="icon" />
+                </td>
+                <td>
+                    08/14/21: <a href="https://arxiv.org/abs/2105.14307">Minimal Length Representations of Database
+                        Provenance</a>, <a href="https://nehamakhija.github.io/">Neha Makhija</a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="emojis/construction.svg" class="icon" />
+                </td>
+                <td>
+                    07/30/21: <a href="https://ieeesb.org/index.html#papers">Structural Attacks on Local Routing in
+                        Payment Channel Networks</a>, <a href="https://ben-weintraub.com/">Ben Weintraub</a>
+                    [<a href="https://youtu.be/x_HUwZkttxM">VIDEO</a>]
+                    [<a href="https://castro.fm/episode/QhHfa8">AUDIO</a>]
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="emojis/chess.svg" class="icon" />
+                </td>
+                <td>
+                    07/24/21: <u>Linear Haskell</u>, <a
+                        href="https://www.khoury.northeastern.edu/people/artem-pelenitsyn/">Artem Pelenitsyn</a>
+                    [<a href="http://staff.mmcs.sfedu.ru/~ulysses/Talks/2021-linear-haskell/">SLIDES</a>]
+                    [<a href="https://youtu.be/ODjWURRRjxA">VIDEO</a>]
+                    [<a href="https://castro.fm/episode/zntclQ">AUDIO</a>]
+                </td>
+            </tr>
+            <tr style="background-color:LightGray;">
+                <td>
+                    <img src="emojis/cafe.svg" class="icon" />
+                </td>
+                <td>
+                    07/10/21: <u>Biology Café #1: The Illogical Nature of Chemical Nomenclature</u>, <a
+                        href="https://www.ems.arizona.edu/2021-2022-leadership-team">Sophia von Hippel</a>
+                    [<a href="artifacts/sophiavonHippel/chemical.notation.pdf">NOTES</a>]
+                    [<a href="https://youtu.be/c4JNJM2hyKI">VIDEO</a>]
+                    [<a href="https://castro.fm/episode/1RfMwK">AUDIO</a>]
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="emojis/work.svg" class="icon" />
+                </td>
+                <td>
+                    06/25/21: <u>Q&A</u>, <a href="https://galois.com/team/john-launchbury/">John Launchbury</a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="emojis/parrot.svg" class="icon" />
+                </td>
+                <td>
+                    06/13/21: <a
+                        href="https://direct.mit.edu/tacl/article/doi/10.1162/tacl_a_00357/97782/Modeling-Content-and-Context-with-Deep-Relational">Modeling
+                        Content and Context with Deep Relational Learning</a>, <a
+                        href="https://mlpacheco.github.io/">Maria Leonor Pacheco</a>
+                    [<a href="https://youtu.be/e6c3HVhZ5NA">VIDEO</a>]
+                    [<a href="https://castro.fm/episode/1SW3x8">AUDIO</a>]
+                </td>
+            </tr>
+            <tr style="background-color:LightGray;">
+                <td>
+                    <img src="emojis/cafe.svg" class="icon" />
+                </td>
+                <td>
+                    06/06/21: <u>Quantum Café #5: Formal Methods (revisited)</u>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="emojis/yarn.svg" class="icon" />
+                </td>
+                <td>
+                    05/29/21: <u>Homotopy Type Theory 101</u>, <a href="https://www.cs.cmu.edu/~cangiuli/">Carlo
+                        Angiuli</a>
+                    [<a href="https://youtu.be/VMqF06fDljU">VIDEO</a>]
+                    [<a href="https://castro.fm/episode/mjisfx">AUDIO</a>]
+                </td>
+            <tr>
+                <td>
+                    <img src="emojis/money.svg" class="icon" />
+                </td>
+                <td>
+                    05/15/21: <u>How Does a Health Actuary Estimate a Reserve?</u>, <a
+                        href="https://www.actuarialtoolkit.com/">Paul Johnson</a>
+                    [<a href="https://www.youtube.com/channel/UCJJidAakXGTDoa68IhdQRuw">CHANNEL</a>]
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="emojis/bolt.svg" class="icon" />
+                </td>
+                <td>
+                    05/01/21: <u>Assembly Programming for M1</u>, <a href="https://tuzz.tech">Chris Patuzzo</a>
+                    [<a href="artifacts/chrisPatuzzo/assembly.pdf">SLIDES</a>]
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="emojis/collaboration.svg" class="icon" />
+                </td>
+                <td>
+                    04/25/21: <u>Open Discussion</u>
+                </td>
+            </tr>
+            <tr style="background-color:LightGray;">
+                <td>
+                    <img src="emojis/cafe.svg" class="icon" />
+                </td>
+                <td>
+                    04/17/21: <u>Quantum Café #4: Grand Unified Theories</u>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="emojis/wave.svg" class="icon" />
+                </td>
+                <td>
+                    04/11/21: <a href="https://projectwaves.net">Project Waves</a>, <a
+                        href="https://github.com/Denbox">Jacob Denbeaux</a>
+                    [<a
+                        href="https://www.theverge.com/2021/4/12/22379848/fcc-speed-test-app-google-apple-download-broadband-maps-coverage">RELATED
+                        NEWS</a>]
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="emojis/ninja.svg" class="icon" />
+                </td>
+                <td>
+                    03/27/21: <u>Introduction to Operational Security</u>, <a href="https://gru.gq/">The Grugq</a>
+                </td>
+            </tr>
+            <tr style="background-color:LightGray;">
+                <td>
+                    <img src="emojis/cafe.svg" class="icon" />
+                </td>
+                <td>
+                    03/21/21: <u>Quantum Café #3: Syntax and Semantics</u>
+                    [<a href="artifacts/maxvonHippel/grammars.txt">NOTES</a>]
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="emojis/lock.svg" class="icon" />
+                </td>
+                <td>
+                    03/13/21: <u>Concurrent Interpretations of Authorization Logic</u>, <a
+                        href="https://akhirsch.science/">Andrew K. Hirsch</a>
+                    [PAPERS: <a href="https://akhirschwebsite.files.wordpress.com/2020/10/csfcameraready.pdf">1</a>,<a
+                        href="https://akhirschwebsite.files.wordpress.com/2020/10/ccs2013cameraready.pdf">2</a>,<a
+                        href="https://www.fabriziomontesi.com/files/cm16_facs.pdf">3</a>]
+                    [<a href="artifacts/andrewKHirsch/andrew.pptx">SLIDES</a>]
+                </td>
+            </tr>
+            <tr style="background-color:LightGray;">
+                <td>
+                    <img src="emojis/cafe.svg" class="icon" />
+                </td>
+                <td>
+                    02/28/21: <u>Quantum Café #2: Noisy Quantum Gates</u>
+                </td>
+            </tr>
+            <tr>
+            <tr>
+                <td>
+                    <img src="emojis/nuclear.svg" class="icon" />
+                </td>
+                <td>
+                    02/27/21: <u>Nuclear Non Proliferation - Role of Citizen Scientists</u>, <a
+                        href="https://spia.princeton.edu/faculty/fvhippel">Frank N. von Hippel</a>
+                    [<a href="https://www.aps.org/policy/nuclear/index.cfm">COALITION</a>]
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="emojis/knot.svg" class="icon" />
+                </td>
+                <td>
+                    02/21/21: <u>Quantum Series #2: Entanglement</u>, <a href="http://billykalfus.com">Billy Kalfus</a>
+                </td>
+            </tr>
+            <tr style="background-color:LightGray;">
+                <td>
+                    <img src="emojis/cafe.svg" class="icon" />
+                </td>
+                <td>
+                    02/13/21: <u>Quantum Café #1: Formal Methods</u>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="emojis/abacus.svg" class="icon" />
+                </td>
+                <td>
+                    02/07/21: <u>Quantum Series #1: Fundamentals</u>, <a href="http://billykalfus.com">Billy Kalfus</a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="emojis/palette.svg" class="icon" />
+                </td>
+                <td>
+                    01/24/21: <u>Algorithmic Artwork</u>, <a href="https://tylerxhobbs.com">Tyler Hobbs</a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="emojis/cat.svg" class="icon" />
+                </td>
+                <td>
+                    01/09/21: <u>Category Theory for Cybernetics</u>, <a href="https://julesh.com/">Jules Hedges</a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="emojis/tools.svg" class="icon" />
+                </td>
+                <td>
+                    12/27/20: <u>Dilemma Languages & Moral Codes</u>, <a href="https://mxvh.pl">Max von Hippel</a>
+                    [<a href="artifacts/maxvonHippel/dilemma.pdf">NOTES</a>]
+                    [<a href="https://www.amazon.com/Formal-Ethics-Harry-J-Gensler-ebook/dp/B000P0JMEA">RELATED</a>]
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="emojis/bio.svg" class="icon" />
+                </td>
+                <td>
+                    12/13/20: <u>Compositional PCA for Microbiome data</u>, <a
+                        href="https://twitter.com/jamietmorton?lang=en">Jamie Morton</a>
+                    [<a href="https://github.com/mortonjt/catvae">CODE</a>]
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="emojis/bomb.svg" class="icon" />
+                </td>
+                <td>
+                    11/29/20: <u>Parsing Real-World Data Formats</u>, <a href="https://prashant.at/">Prashant
+                        Anantharaman</a>
+                    [<a href="https://prashant.at/files/langsec-bcc.pdf">SLIDES</a>]
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="emojis/fax.svg" class="icon" />
+                </td>
+                <td>
+                    11/15/20: <u>What Decentralization Is And Isn't</u>, <a href="https://paul.lol/">Paul Miller</a>
+                    [<a href="https://decentralized.vercel.app/#0">SLIDES</a>]
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="emojis/bow.svg" class="icon" />
+                </td>
+                <td>
+                    11/01/20: <a href="https://www.math3ma.com/blog/the-yoneda-lemma">The Yoneda Lemma</a>, <a
+                        href="https://mathoverflow.net/users/31420/tyler-bryson">Tyler Bryson</a>
+                    [<a href="artifacts/tylerBryson/yoneda_lemma.pdf">SLIDES</a>]
+                    [<a href="https://mitpress.mit.edu/books/topology">BOOK</a>]
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="emojis/clamp.svg" class="icon" />
+                </td>
+                <td>
+                    10/17/20: <a href="https://arxiv.org/abs/1906.00299">Overfitting Management in ML Applications</a>,
+                    <a href="http://www.franceshubis.org/about/">Frances Hubis</a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="emojis/planet.svg" class="icon" />
+                </td>
+                <td>
+                    10/03/20: <a href="https://ui.adsabs.harvard.edu/abs/2019ESS.....432502V/abstract">Testing the
+                        Paradigm of Asteroidal Dust around White Dwarfs</a>, <a
+                        href="https://faculty.erau.edu/Ted.VonHippel">Ted von Hippel</a>
+                </td>
+            <tr>
+            <tr>
+                <td>
+                    <img src="emojis/web.svg" class="icon" />
+                </td>
+                <td>
+                    09/20/20: <u>Implications of Collaborative Filtering</u>, <a href="https://github.com/Denbox">Jacob
+                        Denbeaux</a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="emojis/brain.svg" class="icon" />
+                </td>
+                <td>
+                    09/06/20: <a
+                        href="https://paperswithcode.com/paper/graph-representations-for-higher-order-logic">Graph
+                        Representations for Higher Order Logic</a>, <a href="https://stites.io/">Sam Stites</a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="emojis/balance.svg" class="icon" />
+                </td>
+                <td>
+                    08/16/20: <a href="https://link.springer.com/chapter/10.1007/978-3-642-21070-9_22">Programming from
+                        Galois Connections</a>, <a href="https://mxvh.pl">Max von Hippel</a>
+                    [<a href="artifacts/maxvonHippel/galois.pdf">NOTES</a> full of typos]
+                </td>
+            </tr>
+        </table>
 
-		</p>
-		<br>
-		<center>
-			<p>Emojis from <a href="https://openmoji.org/">OpenMoji</a></p>
-		</center>
-	</body>
+        <h3>Future Meetings</h3>
+        <ul>
+            <li><span>[10/07/23, <u>Artificial Intelligence, Openness, and "Existential" Risk: Well Informed Vibes on
+                        What is Hype and What is Real</u>] <a href="https://evijit.io/">Avijit Ghosh</a>, <a
+                        href="https://davidwidder.me/">David Widder</a>, and <a
+                        href="https://ftollon.wordpress.com/">Fabio Tollon</a>, moderated by <a
+                        href="http://weiright.blogspot.com/2022/06/movie-review-everything-everywhere-all.html">Wei
+                        Sun</a>.</span></li>
+            <li><span>[10/14/23, <u>How to Fund your Projects by Remembering One Number</u>] <a
+                        href="https://www.inktalestudios.com">Joe Shiraef</a>.</span></li>
+            <li><span>[10/21/23, <a href="https://arxiv.org/abs/2109.11967">How to Write a Coequation</a>]</span> <a
+                    href="https://toddtoddtodd.net/">Todd Schmid</a>.</li>
+            <!-- Use emojis/police.svg -->
+            <!-- Use emojis/broom.svg -->
+            <li><span>[11/04/23, <a href="https://twitter.com/c0b1w2/status/1653580936368504837?s=20">Logic in
+                        Color</a>] <a href="https://math.ucr.edu/~williams/">Christian Williams</a>.</li>
+        </ul>
+
+        <h4>Other Venues</h4>
+        <p>
+            We're not the only rodeo in town.
+            If you like us, be sure to check out
+            the <a href="https://www.bu.edu/cs/research/popv/seminar/">BU POPV Seminar</a> (organized by our very own <a
+                href="https://czhang03.github.io/">Cheng Zhang</a>),
+            <a href="https://topos.site/intercats/">Intercats</a> (from the
+            <a href="https://topos.site/">Topos Institute</a>),
+            <a href="https://sites.google.com/southalabama.edu/tmwyf/home">TMWYF</a>,
+            the <a href="https://www.cl.cam.ac.uk/events/owls/">Online Worldwide Seminar on Logic and Semantics</a>,
+            <a href="https://london.computation.club/">London Computation Club</a>,
+            <a href="https://chaitinschool.org/">Chaitin School of Engineering</a>,
+            <a href="https://iiitbtheoryclub.github.io/">IIT Bangalore Theory Club</a>,
+            <a href="https://offbeat.cc/">Offbeat Computation Club</a>,
+            <a href="http://css.csail.mit.edu/security-seminar/">MIT CSAIL Security Seminar</a>,
+            <a href="http://brendanfong.com/seminar.html">MIT Categories Seminar</a>,
+            <a href="https://ml-logic-seminar.github.io/">Waterloo ML+Logic Colloquium</a>,
+            <a href="http://prl.ccs.neu.edu/seminars.html">Northeastern PL Seminar</a>,
+            <a href="https://chaitinschool.org/events/upcoming/?s=CivicTech">CiviTech</a>,
+            and
+            always-wonderful <a href="https://topology.sites.northeastern.edu/">Northeastern Topology Seminar</a>.
+            If you like podcasts, we highly reccomend
+            <a href="https://www.raincodelabs.com/wespeakyourlanguage/">We Speak Your Language</a>,
+            <a href="https://homepage.divms.uiowa.edu/~astump/ittc.html">The Iowa Type Theory Commute</a>, and
+            <a href="https://kpknudson.com/my-favorite-theorem">My Favorite Theorem</a>.
+            If you'd like your venue to be listed here as well, shoot Max an email.
+        </p>
+    </div>
+
+    </p>
+    <br>
+    <center>
+        <p>Emojis from <a href="https://openmoji.org/">OpenMoji</a></p>
+    </center>
+</body>
+
 </html>
