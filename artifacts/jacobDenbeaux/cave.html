@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Cave Puzzle Editor</title>
+        <style>
+            body {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+                margin: 0;
+            }
+
+            canvas {
+                border: 1px solid #000;
+            }
+        </style>
+    </head>
+    <body>
+        <canvas id="gridCanvas"></canvas>
+
+        <script>
+            const canvas = document.getElementById("gridCanvas");
+            const ctx = canvas.getContext("2d");
+            let gridSize = 10;
+            let cellSize;
+            const grid = Array(gridSize);
+            for (let i = 0; i < gridSize; i++) {
+              grid[i] = [];
+              for (let j = 0; j < gridSize; j++) {
+                grid[i][j] = {color:"lightgray", text:""};
+              }
+            }
+
+            let hoveredSquare = {row: -1, col: -1}
+
+            let inputText = "";
+            let textBoxColor = "white";
+
+            function resizeCanvas() {
+                const shortestDimension = Math.min(
+                    window.innerWidth,
+                    window.innerHeight,
+                );
+                canvas.width = canvas.height = 0.8 * shortestDimension;
+                cellSize = (canvas.width - gridSize + 1) / gridSize;
+                drawGrid();
+            }
+
+            function drawGrid() {
+                ctx.clearRect(0, 0, canvas.width, canvas.height);
+                for (let i = 0; i < gridSize; i++) {
+                    for (let j = 0; j < gridSize; j++) {
+                        ctx.fillStyle = grid[i][j].color;
+                        ctx.fillRect(
+                            j * (cellSize + 1),
+                            i * (cellSize + 1),
+                            cellSize,
+                            cellSize,
+                        );
+                        ctx.strokeStyle = "#000";
+                        ctx.strokeRect(
+                            j * (cellSize + 1),
+                            i * (cellSize + 1),
+                            cellSize,
+                            cellSize,
+                        );
+
+                        ctx.fillStyle = "#000";
+                        ctx.font = "14px Arial";
+                        // Center the text in the text box
+                        if (grid[i][j].text != "") {
+                          const textWidth = ctx.measureText(grid[i][j].text).width;
+                          const textX = (cellSize - textWidth) / 2 + j * (cellSize + 1);
+                          const textY = cellSize / 2 + 5 + i * (cellSize + 1);
+                          ctx.fillText(grid[i][j].text, textX, textY);
+                        }
+                    }
+                }
+            }
+
+            function handleClick(event) {
+                const x = Math.floor(event.offsetX / (cellSize + 1));
+                const y = Math.floor(event.offsetY / (cellSize + 1));
+                if (x >= 0 && x <= 9 && y >= 0 && y <= 9)
+                  if (grid[y][x].color == "white" && grid[y][x].text == "")
+                    grid[y][x].color = "black"
+                  else if (grid[y][x].color == "black")
+                    grid[y][x].color = "lightgray"
+                  else if (grid[y][x].color == "lightgray")
+                    grid[y][x].color = "white"
+
+                drawGrid();
+            }
+
+            function handleKeyPress(event) {
+                const key = event.key;
+                console.log(hoveredSquare);
+                const isNumberKey = !isNaN(key) && key !== " ";
+                  if (isNumberKey && hoveredSquare.row !== -1 && hoveredSquare.col !== -1) {
+                    // Add the typed number to the square
+                    grid[hoveredSquare.row][hoveredSquare.col].color = "white"
+                    grid[hoveredSquare.row][hoveredSquare.col].text += key;
+                    drawGrid();
+                } else if (key === "Backspace" && hoveredSquare.row !== -1 && hoveredSquare.col !== -1) {
+                    // Remove the last digit from the square
+                    grid[hoveredSquare.row][hoveredSquare.col].text = grid[hoveredSquare.row][hoveredSquare.col].text.slice(0, -1);
+                    drawGrid();
+                }
+            }
+
+            function handleMouseMove(event) {
+                hoveredSquare.row = Math.floor(event.offsetY / (cellSize + 1));
+                hoveredSquare.col = Math.floor(event.offsetX / (cellSize + 1));
+                drawGrid();
+            }
+
+            function handleMouseOut() {
+                hoveredSquare.row = hoveredSquare.col = -1;
+                drawGrid();
+            }
+
+            window.addEventListener("resize", resizeCanvas);
+            canvas.addEventListener("click", handleClick);
+            window.addEventListener("keypress", handleKeyPress);
+            canvas.addEventListener("mousemove", handleMouseMove);
+            canvas.addEventListener("mouseout", handleMouseOut);
+
+            resizeCanvas();
+        </script>
+    </body>
+</html>
